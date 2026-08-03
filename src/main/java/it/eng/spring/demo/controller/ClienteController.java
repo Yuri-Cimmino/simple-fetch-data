@@ -1,6 +1,7 @@
 package it.eng.spring.demo.controller;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -116,6 +117,21 @@ public class ClienteController {
 	@PostMapping("/cliente")
 	public ResponseEntity<Object> creaCliente(@RequestBody Cliente cliente) {
 		boolean esiste = false;
+		List<String> errori = new ArrayList<>();
+		
+		if(cliente.getNome() == null || cliente.getNome().trim().isEmpty()){
+			errori.add("Nome Obbligatorio");
+//			Errore errBadReq = new Errore("NOM-02", "Nome obbligatorio !");
+//			return ResponseEntity.badRequest().body(errBadReq);	
+		}
+		if(cliente.getCognome() == null || cliente.getCognome().trim().isEmpty()){
+			errori.add("Cognome Obbligatorio");
+//			Errore errBadReq = new Errore("COG-02", "Cognome obbligatorio !");
+//			return ResponseEntity.badRequest().body(errBadReq);	
+		}
+		if(!errori.isEmpty()) {
+			return ResponseEntity.badRequest().body(errori);	
+		}
 		
 		for(Cliente tempCliente : listaClienti) {
 			if(tempCliente.getId() == cliente.getId()) {
