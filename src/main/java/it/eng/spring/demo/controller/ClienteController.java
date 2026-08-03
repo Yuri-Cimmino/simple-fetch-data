@@ -19,43 +19,43 @@ public class ClienteController {
 	
 	private ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
 	
-	@GetMapping("/cliente")
-	public Cliente getCliente() {
-	 Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
-		//  System.out.println(cliente1.getNome());
-		//  System.out.println(cliente1.getCognome());
-	 return cliente1;
-	}
+	// @GetMapping("/cliente")
+	// public Cliente getCliente() {
+	//  Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
+	// 	//  System.out.println(cliente1.getNome());
+	// 	//  System.out.println(cliente1.getCognome());
+	//  return cliente1;
+	// }
+	
+	// @GetMapping("/cliente/{id}")
+	// public Cliente getSpecificClient(@PathVariable Long id) {
+	//  Cliente cliente1 = new Cliente("Lucia","Rossi",id);
+	//  return cliente1;
+	// }
 	
 	@GetMapping("/clienti")
-	public ArrayList<Cliente> getClienti() {
-		Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
-		Cliente cliente2 = new Cliente("Antonio","Falco",2l);
-		
-		listaClienti.add(cliente1);
-		listaClienti.add(cliente2);
-		
-		return listaClienti;
+	public ResponseEntity<Object> getClienti() {
+
+		if(listaClienti.isEmpty()) {
+			Errore errore = new Errore("CLI-003","Lista clienti vuota");
+			return ResponseEntity.status(404).body(errore);
+		}
+
+		return ResponseEntity.ok(listaClienti);
 	}
 	
+
 	@GetMapping("/cliente/{id}")
-	public Cliente getSpecificClient(@PathVariable Long id) {
-	 Cliente cliente1 = new Cliente("Lucia","Rossi",id);
-	 return cliente1;
-	}
-	
-	@GetMapping("/clienti/{id}")
 	public ResponseEntity<Object> getSpecificClients(@PathVariable Long id) {
 		Cliente trovato = null;
 
-//			Cliente c = listaClienti.get(i);
-//			
-//			if(c.getId() == id){
-//				trovato = c;
-//				break;
-//			}
-//			
+//		Cliente c = listaClienti.get(i);
+//
+//		if(c.getId() == id){
+//			trovato = c;
+//			break;
 //		}
+//	}
 		
 		for(Cliente cliente : listaClienti) {
 			if(cliente.getId() == id) {
@@ -70,23 +70,7 @@ public class ClienteController {
 			System.out.println("Errore");
 			Errore errore = new Errore("CLI-001", "Cliente non trovato !");
 			return ResponseEntity.status(404).body(errore);
-//			return ResponseEntity.status(456).body(errore);
 		}
-		
-		
-//		try {
-//			System.out.println("Cliente trovato: " + listaClienti.get(id.intValue()).getNome() +' '+ listaClienti.get(id.intValue()).getCognome());
-//			return ResponseEntity.ok(listaClienti.get(id.intValue()));
-//		} catch (IndexOutOfBoundsException err) {
-//			System.out.println("Cliente non trovato");
-//			return ResponseEntity.status(404).body("Cliente non trovato !");
-//		} catch (NullPointerException err) {
-//			System.out.println("Errore Null Pointer");
-//			return ResponseEntity.status(404).body("(NullPointerException) Cliente non trovato !");
-//		} catch (Throwable err) {
-//			System.out.println("Errore Throwable");
-//			return ResponseEntity.status(404).body("(Throwable) Cliente non trovato !");
-//		}
 	}
 	
 	
@@ -117,18 +101,14 @@ public class ClienteController {
 	
 	@PostMapping("/cliente")
 	public ResponseEntity<Object> creaCliente(@RequestBody Cliente cliente) {
-		boolean esiste = false;
-		List<String> errori = new ArrayList<>();
+		// boolean esiste = false;
+		List<Errore> errori = new ArrayList<>();
 		
 		if(cliente.getNome() == null || cliente.getNome().trim().isEmpty()){
-			errori.add("Nome Obbligatorio");
-//			Errore errBadReq = new Errore("NOM-02", "Nome obbligatorio !");
-//			return ResponseEntity.badRequest().body(errBadReq);	
+			errori.add(new Errore("NOM-01", "Nome obbligatorio"));
 		}
 		if(cliente.getCognome() == null || cliente.getCognome().trim().isEmpty()){
-			errori.add("Cognome Obbligatorio");
-//			Errore errBadReq = new Errore("COG-02", "Cognome obbligatorio !");
-//			return ResponseEntity.badRequest().body(errBadReq);	
+			errori.add(new Errore("COG-01", "Cognome obbligatorio"));
 		}
 		if(!errori.isEmpty()) {
 			return ResponseEntity.badRequest().body(errori);	
@@ -136,18 +116,20 @@ public class ClienteController {
 		
 		for(Cliente tempCliente : listaClienti) {
 			if(tempCliente.getId() == cliente.getId()) {
-				esiste = true;
-				break;
+				// esiste = true;
+				// break;
+				errori.add(new Errore("ADD-CLI-001", "Esiste già un cliente con id " + cliente.getId()));
+				return ResponseEntity.badRequest().body(errori);
 			}
 		}
 		
-		if(!esiste ) {
+		// if(!esiste ) {
 			listaClienti.add(cliente);
 			return ResponseEntity.status(201).body(cliente);
-		}else {
-			Errore errBadReq = new Errore("ADD-CLI-001", "Esiste già un clinete con id " + cliente.getId());
-			return ResponseEntity.badRequest().body(errBadReq);	
-		}
+		// }else {
+		// 	Errore errBadReq = new Errore("ADD-CLI-001", "Esiste già un clinete con id " + cliente.getId());
+		// 	return ResponseEntity.badRequest().body(errBadReq);	
+		// }
 		
 	}
 	
