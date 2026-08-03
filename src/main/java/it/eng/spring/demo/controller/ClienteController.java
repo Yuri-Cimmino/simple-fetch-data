@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import it.eng.spring.demo.model.Cliente;
+import it.eng.spring.demo.model.Errore;
 
 @RestController
 public class ClienteController {
@@ -47,10 +48,8 @@ public class ClienteController {
 		listaClienti.add(cliente2);
 		listaClienti.add(cliente1);
 		
-		
 		Cliente trovato = null;
 
-//	s
 //			Cliente c = listaClienti.get(i);
 //			
 //			if(c.getId() == id){
@@ -71,7 +70,9 @@ public class ClienteController {
 			return ResponseEntity.ok(trovato);
 		} else {
 			System.out.println("Errore");
-			return ResponseEntity.status(404).body(" Cliente non trovato !");
+			Errore errore = new Errore("CLI-001", "Cliente non trovato !");
+			return ResponseEntity.status(404).body(errore);
+//			return ResponseEntity.status(456).body(errore);
 		}
 		
 		
@@ -88,12 +89,9 @@ public class ClienteController {
 //			System.out.println("Errore Throwable");
 //			return ResponseEntity.status(404).body("(Throwable) Cliente non trovato !");
 //		}
-//		
-
-		
 	}
 	
-//	
+	
 //	@GetMapping("/clienti/{id}")
 //	public ResponseEntity<Object> getSpecificClients(@PathVariable Long id) {
 //		Cliente cliente2 = new Cliente("Antonio","Falco",2l);
@@ -116,11 +114,6 @@ public class ClienteController {
 //		} catch (Throwable err) {
 //			System.out.println("Errore Throwable");
 //			return ResponseEntity.status(404).body("(Throwable) Cliente non trovato !");
-//		}
-//		
-//
-//		
+//		}	
 //	}
-//	
-
 }
