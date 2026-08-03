@@ -9,5 +9,10 @@ public class HelloController {
 	public String ciao() {
 		return "Ciao dal Controller";
 	}
+	
+	@GetMapping("/message")
+	public String getMessage() {
+		return "Questo è un messaggio dato dal HelloController";
+	}
 
 }
