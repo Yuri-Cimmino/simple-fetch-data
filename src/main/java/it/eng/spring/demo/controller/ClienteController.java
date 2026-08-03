@@ -2,6 +2,7 @@ package it.eng.spring.demo.controller;
 
 import java.util.ArrayList;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,7 +38,7 @@ public class ClienteController {
 	}
 	
 	@GetMapping("/clienti/{id}")
-	public Cliente getSpecificClients(@PathVariable Long id) {
+	public ResponseEntity<Object> getSpecificClients(@PathVariable Long id) {
 		Cliente cliente2 = new Cliente("Antonio","Falco",2l);
 		Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
 		
@@ -49,18 +50,77 @@ public class ClienteController {
 		
 		Cliente trovato = null;
 
-		for(int i = 0; i < listaClienti.size(); i++ ) {
-			Cliente c = listaClienti.get(i);
-			
-			if(c.getId() == id){
-				trovato = c;
-				break;
+//	s
+//			Cliente c = listaClienti.get(i);
+//			
+//			if(c.getId() == id){
+//				trovato = c;
+//				break;
+//			}
+//			
+//		}
+		
+		for(Cliente cliente : listaClienti) {
+			if(cliente.getId() == id) {
+				trovato = cliente;
 			}
-			
 		}
-		return trovato;
+		
+		if(trovato != null) {
+			System.out.println("Cliente trovato: " + trovato.getNome() +" "+ trovato.getCognome());
+			return ResponseEntity.ok(trovato);
+		} else {
+			System.out.println("Errore");
+			return ResponseEntity.status(404).body(" Cliente non trovato !");
+		}
+		
+		
+//		try {
+//			System.out.println("Cliente trovato: " + listaClienti.get(id.intValue()).getNome() +' '+ listaClienti.get(id.intValue()).getCognome());
+//			return ResponseEntity.ok(listaClienti.get(id.intValue()));
+//		} catch (IndexOutOfBoundsException err) {
+//			System.out.println("Cliente non trovato");
+//			return ResponseEntity.status(404).body("Cliente non trovato !");
+//		} catch (NullPointerException err) {
+//			System.out.println("Errore Null Pointer");
+//			return ResponseEntity.status(404).body("(NullPointerException) Cliente non trovato !");
+//		} catch (Throwable err) {
+//			System.out.println("Errore Throwable");
+//			return ResponseEntity.status(404).body("(Throwable) Cliente non trovato !");
+//		}
+//		
+
 		
 	}
 	
+//	
+//	@GetMapping("/clienti/{id}")
+//	public ResponseEntity<Object> getSpecificClients(@PathVariable Long id) {
+//		Cliente cliente2 = new Cliente("Antonio","Falco",2l);
+//		Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
+//		
+//		ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
+//		
+//		listaClienti.add(cliente2);
+//		listaClienti.add(cliente1);
+//		
+//		try {
+//			System.out.println("Cliente trovato: " + listaClienti.get(id.intValue()).getNome() +' '+ listaClienti.get(id.intValue()).getCognome());
+//			return ResponseEntity.ok(listaClienti.get(id.intValue()));
+//		} catch (IndexOutOfBoundsException err) {
+//			System.out.println("Cliente non trovato");
+//			return ResponseEntity.status(404).body("Cliente non trovato !");
+//		} catch (NullPointerException err) {
+//			System.out.println("Errore Null Pointer");
+//			return ResponseEntity.status(404).body("(NullPointerException) Cliente non trovato !");
+//		} catch (Throwable err) {
+//			System.out.println("Errore Throwable");
+//			return ResponseEntity.status(404).body("(Throwable) Cliente non trovato !");
+//		}
+//		
+//
+//		
+//	}
+//	
 
 }
