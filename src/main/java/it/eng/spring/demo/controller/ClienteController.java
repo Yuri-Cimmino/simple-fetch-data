@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -148,6 +149,29 @@ public class ClienteController {
 			return ResponseEntity.badRequest().body(errBadReq);	
 		}
 		
+	}
+	
+	@PutMapping("/cliente/{id}")
+	public ResponseEntity<Object> modificaCliente(@PathVariable Long id, @RequestBody Cliente clienteToModify){
+		Cliente trovato = null;
+		for(Cliente tempCliente : listaClienti) {
+			if(tempCliente.getId() == id ) {
+				trovato = tempCliente;
+				break;
+			}
+		}
+
+		try{
+			if(trovato != null) {
+				trovato.setNome(clienteToModify.getNome());
+				trovato.setCognome(clienteToModify.getCognome());
+			}else {
+				return ResponseEntity.status(400).body("Risorsa non trovata");	
+			}
+			return ResponseEntity.ok(trovato);	
+		}catch(Throwable err) {
+			return  ResponseEntity.status(400).body("Problema nella richiesta");	
+		}
 	}
 	
 }

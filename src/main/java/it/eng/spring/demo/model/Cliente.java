@@ -15,7 +15,7 @@ public class Cliente {
 	public String getCognome() {
 		return cognome;
 	}
-	public void setCongone(String cognome) {
+	public void setCognome(String cognome) {
 		this.cognome = cognome;
 	}
 	
