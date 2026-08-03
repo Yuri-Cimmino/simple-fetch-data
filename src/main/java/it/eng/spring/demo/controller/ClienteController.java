@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import it.eng.spring.demo.model.Cliente;
@@ -12,6 +14,9 @@ import it.eng.spring.demo.model.Errore;
 
 @RestController
 public class ClienteController {
+	
+	private ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
+	
 	@GetMapping("/cliente")
 	public Cliente getCliente() {
 	 Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
@@ -24,7 +29,6 @@ public class ClienteController {
 	public ArrayList<Cliente> getClienti() {
 		Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
 		Cliente cliente2 = new Cliente("Antonio","Falco",2l);
-		ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
 		
 		listaClienti.add(cliente1);
 		listaClienti.add(cliente2);
@@ -40,14 +44,6 @@ public class ClienteController {
 	
 	@GetMapping("/clienti/{id}")
 	public ResponseEntity<Object> getSpecificClients(@PathVariable Long id) {
-		Cliente cliente2 = new Cliente("Antonio","Falco",2l);
-		Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
-		
-		ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
-		
-		listaClienti.add(cliente2);
-		listaClienti.add(cliente1);
-		
 		Cliente trovato = null;
 
 //			Cliente c = listaClienti.get(i);
@@ -67,7 +63,7 @@ public class ClienteController {
 		
 		if(trovato != null) {
 			System.out.println("Cliente trovato: " + trovato.getNome() +" "+ trovato.getCognome());
-			return ResponseEntity.ok(trovato);
+			return ResponseEntity.status(201).body(trovato);
 		} else {
 			System.out.println("Errore");
 			Errore errore = new Errore("CLI-001", "Cliente non trovato !");
@@ -116,4 +112,26 @@ public class ClienteController {
 //			return ResponseEntity.status(404).body("(Throwable) Cliente non trovato !");
 //		}	
 //	}
+	
+	@PostMapping("/cliente")
+	public ResponseEntity<Object> creaCliente(@RequestBody Cliente cliente) {
+		boolean esiste = false;
+		
+		for(Cliente tempCliente : listaClienti) {
+			if(tempCliente.getId() == cliente.getId()) {
+				esiste = true;
+				break;
+			}
+		}
+		
+		if(!esiste ) {
+			listaClienti.add(cliente);
+			return ResponseEntity.status(201).body(cliente);
+		}else {
+			Errore errBadReq = new Errore("ADD-CLI-001", "Esiste già un clinete con id " + cliente.getId());
+			return ResponseEntity.badRequest().body(errBadReq);	
+		}
+		
+	}
+	
 }
