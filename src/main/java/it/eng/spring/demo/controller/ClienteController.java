@@ -12,10 +12,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import it.eng.spring.demo.dto.ClienteDTOInput;
+import it.eng.spring.demo.dto.ClienteDTOOutput;
 import it.eng.spring.demo.exception.BusinessException;
 import it.eng.spring.demo.exception.Errore;
 import it.eng.spring.demo.model.Cliente;
 import it.eng.spring.demo.service.ClienteService;
+import jakarta.validation.Valid;
 
 @RestController
 public class ClienteController {
@@ -26,20 +29,7 @@ public class ClienteController {
 	public ClienteController(ClienteService cService) {
 		this.cService = cService;
 	}
-	
-	// @GetMapping("/cliente")
-	// public Cliente getCliente() {
-	//  Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
-	// 	//  System.out.println(cliente1.getNome());
-	// 	//  System.out.println(cliente1.getCognome());
-	//  return cliente1;
-	// }
-	
-	// @GetMapping("/cliente/{id}")
-	// public Cliente getSpecificClient(@PathVariable Long id) {
-	//  Cliente cliente1 = new Cliente("Lucia","Rossi",id);
-	//  return cliente1;
-	// }
+
 	
 	@GetMapping("/clienti")
 	public ResponseEntity<Object> getClienti() {
@@ -55,7 +45,7 @@ public class ClienteController {
 
 	@GetMapping("/cliente/{id}")
 	public ResponseEntity<Object> getSpecificClient(@PathVariable Long id) {
-	  Cliente trovato = cService.getSpecificClient(id);
+	  ClienteDTOOutput trovato = cService.getSpecificClient(id);
 		if(trovato != null) {
 			System.out.println("Cliente trovato: " + trovato.getNome() +" "+ trovato.getCognome());
 			return ResponseEntity.status(201).body(trovato);
@@ -66,34 +56,8 @@ public class ClienteController {
 		}
 	}
 	
-	
-//	@GetMapping("/clienti/{id}")
-//	public ResponseEntity<Object> getSpecificClients(@PathVariable Long id) {
-//		Cliente cliente2 = new Cliente("Antonio","Falco",2l);
-//		Cliente cliente1 = new Cliente("Lucia","Rossi",1l);
-//		
-//		ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
-//		
-//		listaClienti.add(cliente2);
-//		listaClienti.add(cliente1);
-//		
-//		try {
-//			System.out.println("Cliente trovato: " + listaClienti.get(id.intValue()).getNome() +' '+ listaClienti.get(id.intValue()).getCognome());
-//			return ResponseEntity.ok(listaClienti.get(id.intValue()));
-//		} catch (IndexOutOfBoundsException err) {
-//			System.out.println("Cliente non trovato");
-//			return ResponseEntity.status(404).body("Cliente non trovato !");
-//		} catch (NullPointerException err) {
-//			System.out.println("Errore Null Pointer");
-//			return ResponseEntity.status(404).body("(NullPointerException) Cliente non trovato !");
-//		} catch (Throwable err) {
-//			System.out.println("Errore Throwable");
-//			return ResponseEntity.status(404).body("(Throwable) Cliente non trovato !");
-//		}	
-//	}
-	
 	@PostMapping("/cliente")
-	public ResponseEntity<Object> creaCliente(@RequestBody Cliente cliente) {
+	public ResponseEntity<Object> creaCliente(@RequestBody @Valid ClienteDTOInput cliente) {
 		try {
 			Cliente nuovoCliente = cService.creaCliente(cliente);
 			return ResponseEntity.status(201).body(nuovoCliente);

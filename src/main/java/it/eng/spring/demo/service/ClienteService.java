@@ -3,50 +3,53 @@ package it.eng.spring.demo.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import it.eng.spring.demo.dto.ClienteDTOInput;
+import it.eng.spring.demo.dto.ClienteDTOOutput;
 import it.eng.spring.demo.exception.BusinessException;
 import it.eng.spring.demo.exception.Errore;
 import it.eng.spring.demo.model.Cliente;
+import it.eng.spring.demo.utils.Utils;
 
 @Service
 public class ClienteService {
 	private ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
 
-	public Cliente getSpecificClient( Long id) {
-		Cliente trovato = null;
+	public ClienteDTOOutput getSpecificClient( Long id) {
+		ClienteDTOOutput trovato = null;
 
 		for(Cliente cliente : listaClienti) {
 			if(cliente.getId() == id) {
-				trovato = cliente;
+				trovato = Utils.Client2ClientDTOOutput(cliente);
 			}
 		}
 		return trovato;
 	}
 	
 	@PostMapping("/cliente")
-	public Cliente creaCliente(@RequestBody Cliente cliente) throws BusinessException {
+	public Cliente creaCliente(@RequestBody ClienteDTOInput clienteDTOInput) throws BusinessException {
 		List<Errore> errori = new ArrayList<>();
 		
-		if(cliente.getNome() == null || cliente.getNome().trim().isEmpty()){
-			errori.add(new Errore("NOM-01", "Nome obbligatorio"));
-		}
-		if(cliente.getCognome() == null || cliente.getCognome().trim().isEmpty()){
-			errori.add(new Errore("COG-01", "Cognome obbligatorio"));
-		}
+//		if(cliente.getNome() == null || cliente.getNome().trim().isEmpty()){
+//			errori.add(new Errore("NOM-01", "Nome obbligatorio"));
+//		}
+//		if(cliente.getCognome() == null || cliente.getCognome().trim().isEmpty()){
+//			errori.add(new Errore("COG-01", "Cognome obbligatorio"));
+//		}
 		if(!errori.isEmpty()) {
 		 throw new BusinessException(errori);	
 		}
 		
-		for(Cliente tempCliente : listaClienti) {
-			if(tempCliente.getId() == cliente.getId()) {
-				errori.add(new Errore("ADD-CLI-001", "Esiste già un cliente con id " + cliente.getId()));
-				 throw new BusinessException(errori);	
-			}
-		}
+//		for(Cliente tempCliente : listaClienti) {
+//			if(tempCliente.getId() == cliente.getId()) {
+//				errori.add(new Errore("ADD-CLI-001", "Esiste già un cliente con id " + cliente.getId()));
+//				 throw new BusinessException(errori);	
+//			}
+//		}
+		Cliente cliente = Utils.ClientDTOInput2Client(clienteDTOInput);
 		listaClienti.add(cliente);
 		return cliente;
 	}
