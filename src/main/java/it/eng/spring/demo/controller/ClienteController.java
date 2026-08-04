@@ -12,13 +12,20 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import it.eng.spring.demo.exception.BusinessException;
 import it.eng.spring.demo.exception.Errore;
 import it.eng.spring.demo.model.Cliente;
+import it.eng.spring.demo.service.ClienteService;
 
 @RestController
 public class ClienteController {
 	
 	private ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
+	private final ClienteService cService;
+	
+	public ClienteController(ClienteService cService) {
+		this.cService = cService;
+	}
 	
 	// @GetMapping("/cliente")
 	// public Cliente getCliente() {
@@ -47,23 +54,8 @@ public class ClienteController {
 	
 
 	@GetMapping("/cliente/{id}")
-	public ResponseEntity<Object> getSpecificClients(@PathVariable Long id) {
-		Cliente trovato = null;
-
-//		Cliente c = listaClienti.get(i);
-//
-//		if(c.getId() == id){
-//			trovato = c;
-//			break;
-//		}
-//	}
-		
-		for(Cliente cliente : listaClienti) {
-			if(cliente.getId() == id) {
-				trovato = cliente;
-			}
-		}
-		
+	public ResponseEntity<Object> getSpecificClient(@PathVariable Long id) {
+	  Cliente trovato = cService.getSpecificClient(id);
 		if(trovato != null) {
 			System.out.println("Cliente trovato: " + trovato.getNome() +" "+ trovato.getCognome());
 			return ResponseEntity.status(201).body(trovato);
@@ -102,36 +94,12 @@ public class ClienteController {
 	
 	@PostMapping("/cliente")
 	public ResponseEntity<Object> creaCliente(@RequestBody Cliente cliente) {
-		// boolean esiste = false;
-		List<Errore> errori = new ArrayList<>();
-		
-		if(cliente.getNome() == null || cliente.getNome().trim().isEmpty()){
-			errori.add(new Errore("NOM-01", "Nome obbligatorio"));
+		try {
+			Cliente nuovoCliente = cService.creaCliente(cliente);
+			return ResponseEntity.status(201).body(nuovoCliente);
+		} catch (BusinessException be) {
+			return ResponseEntity.badRequest().body(be.getListaErrori());
 		}
-		if(cliente.getCognome() == null || cliente.getCognome().trim().isEmpty()){
-			errori.add(new Errore("COG-01", "Cognome obbligatorio"));
-		}
-		if(!errori.isEmpty()) {
-			return ResponseEntity.badRequest().body(errori);	
-		}
-		
-		for(Cliente tempCliente : listaClienti) {
-			if(tempCliente.getId() == cliente.getId()) {
-				// esiste = true;
-				// break;
-				errori.add(new Errore("ADD-CLI-001", "Esiste già un cliente con id " + cliente.getId()));
-				return ResponseEntity.badRequest().body(errori);
-			}
-		}
-		
-		// if(!esiste ) {
-			listaClienti.add(cliente);
-			return ResponseEntity.status(201).body(cliente);
-		// }else {
-		// 	Errore errBadReq = new Errore("ADD-CLI-001", "Esiste già un clinete con id " + cliente.getId());
-		// 	return ResponseEntity.badRequest().body(errBadReq);	
-		// }
-		
 	}
 	
 	@PutMapping("/cliente/{id}")
