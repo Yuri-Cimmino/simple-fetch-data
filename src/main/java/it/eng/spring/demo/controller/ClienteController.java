@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,8 +12,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import it.eng.spring.demo.exception.Errore;
 import it.eng.spring.demo.model.Cliente;
-import it.eng.spring.demo.model.Errore;
 
 @RestController
 public class ClienteController {
@@ -145,8 +146,13 @@ public class ClienteController {
 
 		try{
 			if(trovato != null) {
-				trovato.setNome(clienteToModify.getNome());
-				trovato.setCognome(clienteToModify.getCognome());
+				if (clienteToModify.getNome() != null) { 
+						trovato.setNome(clienteToModify.getNome()); 
+					}
+				
+				if (clienteToModify.getCognome() != null) {
+						trovato.setCognome(clienteToModify.getCognome()); 
+					}
 			}else {
 				return ResponseEntity.status(400).body("Risorsa non trovata");	
 			}
@@ -154,6 +160,19 @@ public class ClienteController {
 		}catch(Throwable err) {
 			return  ResponseEntity.status(400).body("Problema nella richiesta");	
 		}
+	}
+	
+	@DeleteMapping("/cliente/{id}")
+	public ResponseEntity<Object> eliminaCliente(@PathVariable Long id){
+		for(Cliente tempCliente : listaClienti) {
+			if(tempCliente.getId() == id ) {
+				listaClienti.remove(tempCliente);
+				return ResponseEntity.ok(new Errore("CLI-0010","Cancellazione cliente effettuato"));
+			}
+		}
+		Errore errore = new Errore("CLI-009","Cliente non trovato!");
+		return ResponseEntity.status(404).body(errore);	
+		
 	}
 	
 }

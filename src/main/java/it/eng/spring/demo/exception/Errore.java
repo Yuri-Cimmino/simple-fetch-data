@@ -1,4 +1,4 @@
-package it.eng.spring.demo.model;
+package it.eng.spring.demo.exception;
 
 public class Errore {
 	private String codice;
