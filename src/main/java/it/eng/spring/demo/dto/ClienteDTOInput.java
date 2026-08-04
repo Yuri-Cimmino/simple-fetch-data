@@ -1,14 +1,49 @@
 package it.eng.spring.demo.dto;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.PastOrPresent;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.PositiveOrZero;
+import jakarta.validation.constraints.Size;
 
 public class ClienteDTOInput {
-	@NotNull
+	@NotNull(message = "Nome obbligatorio")
+	@NotBlank(message = "Il campo nome non può essere vuoto")
 	private String nome;
+	@NotNull(message = "Cognome obbligatorio")
 	private String cognome;
+	@Size(min = 16, max=16)
+	@NotBlank(message = "Il campo codice fiscale non può essere vuoto")
+	@NotNull(message = "Il codice fiscale è un campo obbligatorio")
+	@Pattern(regexp = "^([A-Z]{6}[0-9LMNPQRSTUV]{2}[ABCDEHLMPRST]{1}[0-9LMNPQRSTUV]{2}[A-Z]{1}[0-9LMNPQRSTUV]{3}[A-Z]{1})$|([0-9]{11})$", message = "Il formato del codice fiscale non è corretto, ricontrollare")
 	private String codiceFiscale;
+	@Email(message = "Il formato mail non è corretto")
 	private String email;
 	private String password;
+//	@Min(18)
+//	@Max(99)
+//	private int eta;
+//	@Positive
+//	@PositiveOrZero
+//	private BigDecimal importo;
+//	@Past
+//	@PastOrPresent
+//	private Date dataNascita;
+//	@Future
+//	@FutureOrPresent
+//	private Date dataScadenza;
+	
 	public String getNome() {
 		return nome;
 	}
