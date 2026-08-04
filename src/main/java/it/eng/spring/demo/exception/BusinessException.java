@@ -2,7 +2,7 @@ package it.eng.spring.demo.exception;
 
 import java.util.List;
 
-public class BusinessException extends Throwable {
+public class BusinessException extends RuntimeException {
 	private final List<Errore> listaErrori;
 	
 	public List<Errore> getListaErrori() {

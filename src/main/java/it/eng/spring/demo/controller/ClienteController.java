@@ -1,9 +1,12 @@
 package it.eng.spring.demo.controller;
 
 import java.util.ArrayList;
-import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.ResponseEntity.BodyBuilder;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,54 +20,70 @@ import it.eng.spring.demo.dto.ClienteDTOOutput;
 import it.eng.spring.demo.exception.BusinessException;
 import it.eng.spring.demo.exception.Errore;
 import it.eng.spring.demo.model.Cliente;
-import it.eng.spring.demo.service.ClienteService;
+import it.eng.spring.demo.services.ClienteService;
 import jakarta.validation.Valid;
 
 @RestController
 public class ClienteController {
 	
 	private ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
+
 	private final ClienteService cService;
+
+	private final static Logger log = LoggerFactory.getLogger(ClienteController.class);
+
+	@Value("${spring.application.name}")
+	private String nomeApplicazione;
+
+	@Value("${logging.level.root}")
+	private String defaultlogginglevelroot;
 	
 	public ClienteController(ClienteService cService) {
 		this.cService = cService;
 	}
+	
+	@GetMapping("/default-log-level")
+	public ResponseEntity<Object> getDefaultLogLevel() {
+		log.error("ERROR");
+		log.warn("WARN");
+		log.info("INFO");
+		log.debug("DEBUG");
+		log.trace("TRACE");
+		return ResponseEntity.ok("Log level di default: " + defaultlogginglevelroot);
+	}
 
+	@GetMapping("/nome-applicazione")
+	public ResponseEntity<Object> getNomeApplicazione(){
+		log.info("NOME: " + nomeApplicazione);
+		return ResponseEntity.ok("Log level di default: " + nomeApplicazione);
+	}
 	
 	@GetMapping("/clienti")
 	public ResponseEntity<Object> getClienti() {
-
-		if(listaClienti.isEmpty()) {
-			Errore errore = new Errore("CLI-003","Lista clienti vuota");
-			return ResponseEntity.status(404).body(errore);
-		}
-
-		return ResponseEntity.ok(listaClienti);
+		return cService.getClienti();
 	}
 	
 
 	@GetMapping("/cliente/{id}")
 	public ResponseEntity<Object> getSpecificClient(@PathVariable Long id) {
 	  ClienteDTOOutput trovato = cService.getSpecificClient(id);
+	  
 		if(trovato != null) {
-			System.out.println("Cliente trovato: " + trovato.getNome() +" "+ trovato.getCognome());
+			log.info("Cliente trovato: " + trovato.getNome() +" "+ trovato.getCognome());
 			return ResponseEntity.status(201).body(trovato);
 		} else {
-			System.out.println("Errore");
+			log.error("Errore");
 			Errore errore = new Errore("CLI-001", "Cliente non trovato !");
 			return ResponseEntity.status(404).body(errore);
 		}
 	}
 	
 	@PostMapping("/cliente")
-	public ResponseEntity<Object> creaCliente(@RequestBody @Valid ClienteDTOInput cliente) {
-		try {
-			Cliente nuovoCliente = cService.creaCliente(cliente);
-			return ResponseEntity.status(201).body(nuovoCliente);
-		} catch (BusinessException be) {
-			return ResponseEntity.badRequest().body(be.getListaErrori());
-		}
+	public ResponseEntity<Object> creaCliente(@RequestBody @Valid ClienteDTOInput cliente) throws BusinessException {
+		Cliente nuovoCliente = cService.creaCliente(cliente);
+		return ResponseEntity.status(201).body(nuovoCliente);
 	}
+	
 	
 	@PutMapping("/cliente/{id}")
 	public ResponseEntity<Object> modificaCliente(@PathVariable Long id, @RequestBody Cliente clienteToModify){

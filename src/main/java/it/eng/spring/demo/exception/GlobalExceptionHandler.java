@@ -13,5 +13,10 @@ public class GlobalExceptionHandler {
 		return ResponseEntity.badRequest().body(manveErr);
 	}
 	
+	@ExceptionHandler
+	public ResponseEntity<Object> handleBusinessException(BusinessException be){
+		Errore err = new Errore("ERR-1","Error BusinessException: " + be);
+		return ResponseEntity.badRequest().body(err);
+	}
 
 }

@@ -1,0 +1,896 @@
+2026-08-04T15:56:08.147+02:00  INFO 36460 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 36460 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T15:56:08.155+02:00  INFO 36460 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T15:56:10.106+02:00  INFO 36460 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T15:56:10.130+02:00  INFO 36460 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T15:56:10.131+02:00  INFO 36460 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T15:56:10.215+02:00  INFO 36460 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1951 ms
+2026-08-04T15:56:10.872+02:00  INFO 36460 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T15:56:10.887+02:00  INFO 36460 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.559 seconds (process running for 4.244)
+2026-08-04T15:56:19.592+02:00  INFO 36460 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T15:56:19.598+02:00  INFO 36460 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T15:56:19.607+02:00  INFO 36460 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-08-04T15:56:19.788+02:00 ERROR 36460 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T15:56:19.789+02:00  WARN 36460 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T15:56:19.789+02:00  INFO 36460 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T15:56:19.790+02:00  INFO 36460 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-04T15:56:19.790+02:00 ERROR 36460 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-04T16:39:47.120+02:00  INFO 31280 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 31280 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T16:39:47.129+02:00  INFO 31280 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T16:39:49.546+02:00  INFO 31280 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T16:39:49.587+02:00  INFO 31280 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T16:39:49.588+02:00  INFO 31280 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T16:39:49.846+02:00  INFO 31280 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2615 ms
+2026-08-04T16:39:51.180+02:00  INFO 31280 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T16:39:51.194+02:00  INFO 31280 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 4.973 seconds (process running for 5.683)
+2026-08-04T16:39:54.104+02:00  INFO 31280 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T16:39:54.104+02:00  INFO 31280 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T16:39:54.106+02:00  INFO 31280 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-04T16:39:59.895+02:00  WARN 31280 --- [simpleFetchData] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> it.eng.spring.demo.controller.ClienteController.creaCliente(it.eng.spring.demo.dto.ClienteDTOInput) with 2 errors: [Field error in object 'clienteDTOInput' on field 'nome': rejected value [null]; codes [NotBlank.clienteDTOInput.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteDTOInput.nome,nome]; arguments []; default message [nome]]; default message [Il campo nome non può essere vuoto]] [Field error in object 'clienteDTOInput' on field 'nome': rejected value [null]; codes [NotNull.clienteDTOInput.nome,NotNull.nome,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteDTOInput.nome,nome]; arguments []; default message [nome]]; default message [Nome obbligatorio]] ]
+2026-08-04T16:48:32.867+02:00  INFO 14612 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 14612 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T16:48:32.877+02:00  INFO 14612 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T16:48:34.747+02:00  INFO 14612 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T16:48:34.781+02:00  INFO 14612 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T16:48:34.781+02:00  INFO 14612 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T16:48:34.872+02:00  INFO 14612 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1870 ms
+2026-08-04T16:48:35.682+02:00  INFO 14612 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T16:48:35.693+02:00  INFO 14612 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.886 seconds (process running for 4.938)
+2026-08-04T16:48:39.456+02:00  INFO 14612 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T16:48:39.457+02:00  INFO 14612 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T16:48:39.462+02:00  INFO 14612 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T16:56:27.032+02:00  INFO 17588 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 17588 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T16:56:27.049+02:00  INFO 17588 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T16:56:28.699+02:00  INFO 17588 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T16:56:28.720+02:00  INFO 17588 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T16:56:28.721+02:00  INFO 17588 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T16:56:28.827+02:00  INFO 17588 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1654 ms
+2026-08-04T16:56:29.527+02:00  INFO 17588 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T16:56:29.536+02:00  INFO 17588 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.348 seconds (process running for 4.078)
+2026-08-04T16:56:43.375+02:00  INFO 17588 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T16:56:43.376+02:00  INFO 17588 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T16:56:43.380+02:00  INFO 17588 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T16:58:19.991+02:00  INFO 35552 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 35552 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T16:58:20.006+02:00  INFO 35552 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T16:58:21.871+02:00  INFO 35552 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T16:58:21.890+02:00  INFO 35552 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T16:58:21.890+02:00  INFO 35552 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T16:58:21.969+02:00  INFO 35552 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1819 ms
+2026-08-04T16:58:22.790+02:00  INFO 35552 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T16:58:22.799+02:00  INFO 35552 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.692 seconds (process running for 4.453)
+2026-08-04T16:58:54.479+02:00  INFO 26448 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 26448 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T16:58:54.495+02:00  INFO 26448 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T16:58:56.407+02:00  INFO 26448 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T16:58:56.430+02:00  INFO 26448 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T16:58:56.430+02:00  INFO 26448 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T16:58:56.499+02:00  INFO 26448 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1835 ms
+2026-08-04T16:58:57.248+02:00  INFO 26448 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T16:58:57.257+02:00  INFO 26448 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.627 seconds (process running for 4.332)
+2026-08-04T16:59:00.784+02:00  INFO 26448 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T16:59:00.787+02:00  INFO 26448 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T16:59:00.791+02:00  INFO 26448 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-08-04T17:00:41.142+02:00  INFO 24352 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 24352 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:00:41.151+02:00  INFO 24352 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:00:42.912+02:00  INFO 24352 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:00:42.944+02:00  INFO 24352 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:00:42.945+02:00  INFO 24352 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:00:43.035+02:00  INFO 24352 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1757 ms
+2026-08-04T17:00:43.833+02:00  INFO 24352 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:00:43.846+02:00  INFO 24352 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.773 seconds (process running for 4.921)
+2026-08-04T17:00:48.182+02:00  INFO 24352 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:00:48.183+02:00  INFO 24352 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:00:48.187+02:00  INFO 24352 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:02:15.382+02:00  INFO 44024 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 44024 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:02:15.391+02:00  INFO 44024 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:02:17.787+02:00  INFO 44024 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:02:17.829+02:00  INFO 44024 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:02:17.829+02:00  INFO 44024 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:02:18.035+02:00  INFO 44024 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2511 ms
+2026-08-04T17:02:19.365+02:00  INFO 44024 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:02:19.377+02:00  INFO 44024 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 5.221 seconds (process running for 6.278)
+2026-08-04T17:02:19.993+02:00  INFO 44024 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:02:19.994+02:00  INFO 44024 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:02:19.998+02:00  INFO 44024 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:11:24.800+02:00  INFO 42100 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 42100 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:11:24.815+02:00  INFO 42100 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:11:26.829+02:00  INFO 42100 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:11:26.849+02:00  INFO 42100 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:11:26.849+02:00  INFO 42100 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:11:26.934+02:00  INFO 42100 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1990 ms
+2026-08-04T17:11:27.702+02:00  INFO 42100 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:11:27.712+02:00  INFO 42100 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.778 seconds (process running for 4.544)
+2026-08-04T17:11:28.111+02:00  INFO 42100 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:11:28.111+02:00  INFO 42100 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:11:28.114+02:00  INFO 42100 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:11:38.448+02:00  WARN 42100 --- [simpleFetchData] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start property name]
+2026-08-04T17:13:41.112+02:00  INFO 56392 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 56392 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:13:41.125+02:00  INFO 56392 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:13:43.984+02:00  INFO 56392 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:13:44.057+02:00  INFO 56392 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:13:44.058+02:00  INFO 56392 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:13:44.272+02:00  INFO 56392 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3013 ms
+2026-08-04T17:13:45.852+02:00  INFO 56392 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:13:45.874+02:00  INFO 56392 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 5.805 seconds (process running for 6.542)
+2026-08-04T17:14:03.149+02:00  INFO 56392 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:14:03.150+02:00  INFO 56392 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:14:03.153+02:00  INFO 56392 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-04T17:14:28.296+02:00  WARN 56392 --- [simpleFetchData] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start property name]
+2026-08-04T17:17:25.221+02:00  INFO 42584 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 42584 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:17:25.230+02:00  INFO 42584 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:17:27.146+02:00  INFO 42584 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:17:27.170+02:00  INFO 42584 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:17:27.171+02:00  INFO 42584 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:17:27.331+02:00  INFO 42584 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2005 ms
+2026-08-04T17:17:27.496+02:00  WARN 42584 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clienteController' defined in file [C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes\it\eng\spring\demo\controller\ClienteController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'clienteService': Lookup method resolution failed
+2026-08-04T17:17:27.505+02:00  INFO 42584 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-08-04T17:17:27.539+02:00  INFO 42584 --- [simpleFetchData] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-04T17:17:27.582+02:00 ERROR 42584 --- [simpleFetchData] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clienteController' defined in file [C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes\it\eng\spring\demo\controller\ClienteController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'clienteService': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1191) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clienteService': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:482) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:352) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1319) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1216) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1769) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.8.jar:7.0.8]
+	... 21 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [it.eng.spring.demo.service.ClienteService] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@5c647e05]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-7.0.8.jar:7.0.8]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460) ~[spring-beans-7.0.8.jar:7.0.8]
+	... 35 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: BusinessException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3580) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2678) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-7.0.8.jar:7.0.8]
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: BusinessException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 41 common frames omitted
+
+2026-08-04T17:18:14.174+02:00  INFO 20012 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 20012 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:18:14.186+02:00  INFO 20012 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:18:16.099+02:00  INFO 20012 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:18:16.130+02:00  INFO 20012 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:18:16.131+02:00  INFO 20012 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:18:16.308+02:00  INFO 20012 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1981 ms
+2026-08-04T17:18:17.597+02:00  INFO 20012 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:18:17.608+02:00  INFO 20012 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 4.319 seconds (process running for 4.969)
+2026-08-04T17:18:19.706+02:00  INFO 20012 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:18:19.707+02:00  INFO 20012 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:18:19.710+02:00  INFO 20012 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:18:34.427+02:00  INFO 20756 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 20756 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:18:34.440+02:00  INFO 20756 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:18:36.092+02:00  INFO 20756 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:18:36.123+02:00  INFO 20756 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:18:36.123+02:00  INFO 20756 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:18:36.193+02:00  INFO 20756 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1657 ms
+2026-08-04T17:18:36.816+02:00  INFO 20756 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:18:36.823+02:00  INFO 20756 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.177 seconds (process running for 3.816)
+2026-08-04T17:18:46.116+02:00  INFO 20756 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:18:46.117+02:00  INFO 20756 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:18:46.119+02:00  INFO 20756 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-04T17:20:19.315+02:00  INFO 56572 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 56572 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:20:19.331+02:00  INFO 56572 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:20:20.941+02:00  INFO 56572 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:20:20.966+02:00  INFO 56572 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:20:20.967+02:00  INFO 56572 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:20:21.082+02:00  INFO 56572 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1662 ms
+2026-08-04T17:20:22.053+02:00  INFO 56572 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:20:22.070+02:00  INFO 56572 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.548 seconds (process running for 4.204)
+2026-08-04T17:20:23.131+02:00  INFO 56572 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:20:23.132+02:00  INFO 56572 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:20:23.134+02:00  INFO 56572 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-04T17:20:48.153+02:00  INFO 21884 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 21884 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:20:48.170+02:00  INFO 21884 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:20:49.829+02:00  INFO 21884 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:20:49.848+02:00  INFO 21884 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:20:49.848+02:00  INFO 21884 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:20:49.918+02:00  INFO 21884 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1614 ms
+2026-08-04T17:20:50.492+02:00  INFO 21884 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:20:50.498+02:00  INFO 21884 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.226 seconds (process running for 4.034)
+2026-08-04T17:22:08.178+02:00  INFO 3924 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 3924 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:22:08.185+02:00  INFO 3924 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:22:09.979+02:00  INFO 3924 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:22:10.012+02:00  INFO 3924 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:22:10.012+02:00  INFO 3924 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:22:10.177+02:00  INFO 3924 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1874 ms
+2026-08-04T17:22:11.082+02:00  INFO 3924 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:22:11.090+02:00  INFO 3924 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.702 seconds (process running for 4.364)
+2026-08-04T17:22:12.208+02:00  INFO 3924 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:22:12.209+02:00  INFO 3924 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:22:12.211+02:00  INFO 3924 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-04T17:24:33.331+02:00  INFO 6720 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 6720 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:24:33.340+02:00  INFO 6720 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:24:35.109+02:00  INFO 6720 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:24:35.130+02:00  INFO 6720 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:24:35.131+02:00  INFO 6720 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:24:35.210+02:00  INFO 6720 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1740 ms
+2026-08-04T17:24:36.212+02:00  INFO 6720 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:24:36.221+02:00  INFO 6720 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.682 seconds (process running for 4.343)
+2026-08-04T17:24:38.360+02:00  INFO 6720 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:24:38.361+02:00  INFO 6720 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:24:38.365+02:00  INFO 6720 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-08-04T17:27:45.525+02:00  INFO 40604 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 40604 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:27:45.537+02:00  INFO 40604 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:27:45.959+02:00  WARN 40604 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+2026-08-04T17:27:46.319+02:00 ERROR 40604 --- [simpleFetchData] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'clienteService' for bean class [it.eng.spring.demo.service.ClienteService] conflicts with existing, non-compatible bean definition of same name and class [it.eng.spring.demo.services.ClienteService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:363) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:290) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-7.0.8.jar:7.0.8]
+	... 13 common frames omitted
+
+2026-08-04T17:28:20.353+02:00  INFO 30800 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 30800 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:28:20.369+02:00  INFO 30800 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:28:20.748+02:00  WARN 30800 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+2026-08-04T17:28:21.057+02:00 ERROR 30800 --- [simpleFetchData] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'clienteService' for bean class [it.eng.spring.demo.service.ClienteService] conflicts with existing, non-compatible bean definition of same name and class [it.eng.spring.demo.services.ClienteService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:363) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:290) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-7.0.8.jar:7.0.8]
+	... 13 common frames omitted
+
+2026-08-04T17:33:10.370+02:00  INFO 44796 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 44796 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:33:10.385+02:00  INFO 44796 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:33:10.908+02:00  WARN 44796 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+2026-08-04T17:33:11.273+02:00 ERROR 44796 --- [simpleFetchData] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'clienteService' for bean class [it.eng.spring.demo.service.ClienteService] conflicts with existing, non-compatible bean definition of same name and class [it.eng.spring.demo.services.ClienteService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:363) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:290) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-7.0.8.jar:7.0.8]
+	... 13 common frames omitted
+
+2026-08-04T17:34:32.645+02:00  INFO 24936 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 24936 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:34:32.663+02:00  INFO 24936 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:34:33.010+02:00  WARN 24936 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+2026-08-04T17:34:33.475+02:00 ERROR 24936 --- [simpleFetchData] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'clienteService' for bean class [it.eng.spring.demo.service.ClienteService] conflicts with existing, non-compatible bean definition of same name and class [it.eng.spring.demo.services.ClienteService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:363) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:290) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-7.0.8.jar:7.0.8]
+	... 13 common frames omitted
+
+2026-08-04T17:36:04.821+02:00  INFO 64324 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 64324 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:36:04.829+02:00  INFO 64324 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:36:05.194+02:00  WARN 64324 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+2026-08-04T17:36:05.622+02:00 ERROR 64324 --- [simpleFetchData] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'clienteService' for bean class [it.eng.spring.demo.service.ClienteService] conflicts with existing, non-compatible bean definition of same name and class [it.eng.spring.demo.services.ClienteService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:363) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:290) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-7.0.8.jar:7.0.8]
+	... 13 common frames omitted
+
+2026-08-04T17:37:21.705+02:00  INFO 41912 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 41912 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:37:21.715+02:00  INFO 41912 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:37:22.148+02:00  WARN 41912 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+2026-08-04T17:37:22.574+02:00 ERROR 41912 --- [simpleFetchData] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [it.eng.spring.demo.DemoApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'clienteService' for bean class [it.eng.spring.demo.service.ClienteService] conflicts with existing, non-compatible bean definition of same name and class [it.eng.spring.demo.services.ClienteService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:363) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:290) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:349) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-7.0.8.jar:7.0.8]
+	... 13 common frames omitted
+
+2026-08-04T17:38:16.461+02:00  INFO 55620 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 55620 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:38:16.469+02:00  INFO 55620 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:38:18.069+02:00  INFO 55620 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:38:18.087+02:00  INFO 55620 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:38:18.087+02:00  INFO 55620 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:38:18.152+02:00  INFO 55620 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1549 ms
+2026-08-04T17:38:18.819+02:00  INFO 55620 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:38:18.827+02:00  INFO 55620 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.118 seconds (process running for 3.777)
+2026-08-04T17:38:22.738+02:00  INFO 55620 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:38:22.739+02:00  INFO 55620 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:38:22.741+02:00  INFO 55620 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-04T17:38:22.845+02:00  INFO 55620 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-04T17:38:36.801+02:00  INFO 44540 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 44540 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:38:36.809+02:00  INFO 44540 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:38:38.371+02:00  INFO 44540 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:38:38.399+02:00  INFO 44540 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:38:38.400+02:00  INFO 44540 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:38:38.475+02:00  INFO 44540 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1543 ms
+2026-08-04T17:38:39.036+02:00  INFO 44540 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:38:39.046+02:00  INFO 44540 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.026 seconds (process running for 3.685)
+2026-08-04T17:38:46.315+02:00  INFO 44540 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:38:46.316+02:00  INFO 44540 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:38:46.319+02:00  INFO 44540 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-04T17:38:46.394+02:00  INFO 44540 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-04T17:40:58.881+02:00  INFO 13616 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 13616 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:40:58.890+02:00  INFO 13616 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:41:00.496+02:00  INFO 13616 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:41:00.517+02:00  INFO 13616 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:41:00.518+02:00  INFO 13616 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:41:00.584+02:00  INFO 13616 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1583 ms
+2026-08-04T17:41:01.155+02:00  INFO 13616 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:41:01.165+02:00  INFO 13616 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.079 seconds (process running for 3.746)
+2026-08-04T17:41:04.004+02:00  INFO 13616 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:41:04.005+02:00  INFO 13616 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:41:04.008+02:00  INFO 13616 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:41:04.104+02:00 ERROR 13616 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert ")" to complete MethodInvocation
+	Syntax error, insert ";" to complete ReturnStatement
+	Syntax error, insert "}" to complete Block
+] with root cause
+
+java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert ")" to complete MethodInvocation
+	Syntax error, insert ";" to complete ReturnStatement
+	Syntax error, insert "}" to complete Block
+
+	at it.eng.spring.demo.controller.ClienteController.getNomeApplicazione(ClienteController.java:53) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-08-04T17:42:08.670+02:00  INFO 22536 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 22536 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:42:08.679+02:00  INFO 22536 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:42:10.555+02:00  INFO 22536 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:42:10.575+02:00  INFO 22536 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:42:10.576+02:00  INFO 22536 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:42:10.662+02:00  INFO 22536 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1851 ms
+2026-08-04T17:42:11.798+02:00  INFO 22536 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:42:11.823+02:00  INFO 22536 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 4.028 seconds (process running for 4.757)
+2026-08-04T17:42:13.195+02:00  INFO 22536 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:42:13.196+02:00  INFO 22536 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:42:13.199+02:00  INFO 22536 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-04T17:42:13.288+02:00  INFO 22536 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-04T17:42:16.277+02:00 ERROR 22536 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:42:16.278+02:00  WARN 22536 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:42:16.278+02:00  INFO 22536 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:44:23.730+02:00  INFO 37160 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 37160 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:44:23.739+02:00  INFO 37160 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:44:25.908+02:00  INFO 37160 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:44:25.935+02:00  INFO 37160 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:44:25.935+02:00  INFO 37160 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:44:26.053+02:00  INFO 37160 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2176 ms
+2026-08-04T17:44:27.025+02:00  INFO 37160 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:44:27.033+02:00  INFO 37160 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 4.193 seconds (process running for 4.912)
+2026-08-04T17:44:29.014+02:00  INFO 37160 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:44:29.015+02:00  INFO 37160 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:44:29.017+02:00  INFO 37160 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-04T17:44:29.097+02:00  INFO 37160 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-04T17:44:31.111+02:00 ERROR 37160 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:44:31.112+02:00  WARN 37160 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:44:31.112+02:00  INFO 37160 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:44:32.217+02:00 ERROR 37160 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:44:32.217+02:00  WARN 37160 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:44:32.218+02:00  INFO 37160 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:44:35.453+02:00  INFO 37160 --- [simpleFetchData] [http-nio-8080-exec-4] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-04T17:44:46.786+02:00  INFO 13352 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 13352 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:44:46.797+02:00  INFO 13352 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:44:48.481+02:00  INFO 13352 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:44:48.501+02:00  INFO 13352 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:44:48.502+02:00  INFO 13352 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:44:48.572+02:00  INFO 13352 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1648 ms
+2026-08-04T17:44:49.140+02:00  WARN 13352 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-04T17:44:49.158+02:00  INFO 13352 --- [simpleFetchData] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-04T17:44:49.176+02:00 ERROR 13352 --- [simpleFetchData] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-08-04T17:44:59.021+02:00  INFO 54696 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 54696 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:44:59.031+02:00  INFO 54696 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:45:00.950+02:00  INFO 54696 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:45:00.986+02:00  INFO 54696 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:45:00.987+02:00  INFO 54696 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:45:01.199+02:00  INFO 54696 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2029 ms
+2026-08-04T17:45:02.211+02:00  INFO 54696 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:45:02.222+02:00  INFO 54696 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.985 seconds (process running for 4.659)
+2026-08-04T17:45:03.686+02:00  INFO 54696 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:45:03.687+02:00  INFO 54696 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:45:03.691+02:00  INFO 54696 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:45:03.808+02:00 ERROR 54696 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:45:03.809+02:00  WARN 54696 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:45:03.810+02:00  INFO 54696 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:45:04.835+02:00 ERROR 54696 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:45:04.836+02:00  WARN 54696 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:45:04.836+02:00  INFO 54696 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:45:24.528+02:00  INFO 4332 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 4332 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:45:24.538+02:00  INFO 4332 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:45:27.044+02:00  INFO 4332 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:45:27.088+02:00  INFO 4332 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:45:27.089+02:00  INFO 4332 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:45:27.291+02:00  INFO 4332 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2655 ms
+2026-08-04T17:45:28.454+02:00  INFO 4332 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:45:28.480+02:00  INFO 4332 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 4.871 seconds (process running for 5.562)
+2026-08-04T17:45:29.084+02:00  INFO 4332 --- [simpleFetchData] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:45:29.086+02:00  INFO 4332 --- [simpleFetchData] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:45:29.089+02:00  INFO 4332 --- [simpleFetchData] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:45:29.162+02:00 ERROR 4332 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:45:29.163+02:00  WARN 4332 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:45:29.163+02:00  INFO 4332 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:45:29.173+02:00 ERROR 4332 --- [simpleFetchData] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" because "level" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" because "level" is null
+	at org.slf4j.Logger.isEnabledForLevel(Logger.java:146) ~[slf4j-api-2.0.18.jar:2.0.18]
+	at org.slf4j.Logger.atLevel(Logger.java:130) ~[slf4j-api-2.0.18.jar:2.0.18]
+	at it.eng.spring.demo.controller.ClienteController.getDefaultLogLevel(ClienteController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-08-04T17:45:30.290+02:00 ERROR 4332 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:45:30.291+02:00  WARN 4332 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:45:30.291+02:00  INFO 4332 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:45:30.303+02:00 ERROR 4332 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" because "level" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" because "level" is null
+	at org.slf4j.Logger.isEnabledForLevel(Logger.java:146) ~[slf4j-api-2.0.18.jar:2.0.18]
+	at org.slf4j.Logger.atLevel(Logger.java:130) ~[slf4j-api-2.0.18.jar:2.0.18]
+	at it.eng.spring.demo.controller.ClienteController.getDefaultLogLevel(ClienteController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-08-04T17:45:31.056+02:00 ERROR 4332 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:45:31.056+02:00  WARN 4332 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:45:31.057+02:00  INFO 4332 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:45:31.058+02:00 ERROR 4332 --- [simpleFetchData] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" because "level" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" because "level" is null
+	at org.slf4j.Logger.isEnabledForLevel(Logger.java:146) ~[slf4j-api-2.0.18.jar:2.0.18]
+	at org.slf4j.Logger.atLevel(Logger.java:130) ~[slf4j-api-2.0.18.jar:2.0.18]
+	at it.eng.spring.demo.controller.ClienteController.getDefaultLogLevel(ClienteController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-08-04T17:45:31.465+02:00 ERROR 4332 --- [simpleFetchData] [http-nio-8080-exec-4] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:45:31.465+02:00  WARN 4332 --- [simpleFetchData] [http-nio-8080-exec-4] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:45:31.466+02:00  INFO 4332 --- [simpleFetchData] [http-nio-8080-exec-4] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:45:31.467+02:00 ERROR 4332 --- [simpleFetchData] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" because "level" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" because "level" is null
+	at org.slf4j.Logger.isEnabledForLevel(Logger.java:146) ~[slf4j-api-2.0.18.jar:2.0.18]
+	at org.slf4j.Logger.atLevel(Logger.java:130) ~[slf4j-api-2.0.18.jar:2.0.18]
+	at it.eng.spring.demo.controller.ClienteController.getDefaultLogLevel(ClienteController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-08-04T17:47:28.113+02:00  INFO 40512 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 40512 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:47:28.124+02:00  INFO 40512 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:47:30.930+02:00  INFO 40512 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:47:30.982+02:00  INFO 40512 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:47:30.983+02:00  INFO 40512 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:47:31.191+02:00  INFO 40512 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2884 ms
+2026-08-04T17:47:32.826+02:00  INFO 40512 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:47:32.846+02:00  INFO 40512 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 5.984 seconds (process running for 6.711)
+2026-08-04T17:47:55.021+02:00  INFO 40512 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:47:55.024+02:00  INFO 40512 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:47:55.028+02:00  INFO 40512 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:47:55.180+02:00 ERROR 40512 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:47:55.181+02:00  WARN 40512 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:47:55.182+02:00  INFO 40512 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:47:59.251+02:00  INFO 40512 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-04T17:50:58.147+02:00  INFO 40512 --- [simpleFetchData] [http-nio-8080-exec-5] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-04T17:50:59.557+02:00 ERROR 40512 --- [simpleFetchData] [http-nio-8080-exec-6] i.e.s.demo.controller.ClienteController  : ERROR
+2026-08-04T17:50:59.557+02:00  WARN 40512 --- [simpleFetchData] [http-nio-8080-exec-6] i.e.s.demo.controller.ClienteController  : WARN
+2026-08-04T17:50:59.557+02:00  INFO 40512 --- [simpleFetchData] [http-nio-8080-exec-6] i.e.s.demo.controller.ClienteController  : INFO
+2026-08-04T17:51:24.406+02:00  INFO 31660 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 31660 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:51:24.422+02:00  INFO 31660 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:51:26.106+02:00  INFO 31660 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:51:26.125+02:00  INFO 31660 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:51:26.125+02:00  INFO 31660 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:51:26.204+02:00  INFO 31660 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1690 ms
+2026-08-04T17:51:26.902+02:00  INFO 31660 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:51:26.917+02:00  INFO 31660 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.328 seconds (process running for 4.003)
+2026-08-04T17:51:47.616+02:00  INFO 31660 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:51:47.617+02:00  INFO 31660 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:51:47.621+02:00  INFO 31660 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-04T17:52:22.446+02:00  INFO 44748 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 44748 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:52:22.465+02:00  INFO 44748 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:52:24.208+02:00  INFO 44748 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:52:24.251+02:00  INFO 44748 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:52:24.253+02:00  INFO 44748 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:52:24.415+02:00  INFO 44748 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1832 ms
+2026-08-04T17:52:25.498+02:00  INFO 44748 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:52:25.512+02:00  INFO 44748 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 4.059 seconds (process running for 4.775)
+2026-08-04T17:52:26.734+02:00  INFO 44748 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:52:26.735+02:00  INFO 44748 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:52:26.737+02:00  INFO 44748 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-08-04T17:52:27.292+02:00  INFO 44748 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : cliente: it.eng.spring.demo.dto.ClienteDTOInput@6a3401c6
+2026-08-04T17:54:40.984+02:00  INFO 14772 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 14772 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T17:54:40.992+02:00  INFO 14772 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T17:54:42.731+02:00  INFO 14772 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T17:54:42.753+02:00  INFO 14772 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T17:54:42.754+02:00  INFO 14772 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T17:54:42.841+02:00  INFO 14772 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1728 ms
+2026-08-04T17:54:43.444+02:00  INFO 14772 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T17:54:43.449+02:00  INFO 14772 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.312 seconds (process running for 3.981)
+2026-08-04T17:54:47.518+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T17:54:47.519+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T17:54:47.520+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-04T17:54:54.636+02:00 ERROR 14772 --- [simpleFetchData] [http-nio-8080-exec-8] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-04T17:54:59.627+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-9] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T17:55:02.175+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-10] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T17:55:07.174+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T17:55:11.147+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T17:55:14.669+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T17:55:17.040+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-4] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T17:55:19.465+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-5] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T17:55:28.701+02:00 ERROR 14772 --- [simpleFetchData] [http-nio-8080-exec-7] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-04T17:55:31.221+02:00 ERROR 14772 --- [simpleFetchData] [http-nio-8080-exec-8] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-04T17:55:33.690+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-9] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T17:55:36.170+02:00 ERROR 14772 --- [simpleFetchData] [http-nio-8080-exec-10] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-04T17:55:39.976+02:00  INFO 14772 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T18:02:02.126+02:00  INFO 57312 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 57312 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-04T18:02:02.135+02:00  INFO 57312 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-04T18:02:03.818+02:00  INFO 57312 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T18:02:03.835+02:00  INFO 57312 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T18:02:03.836+02:00  INFO 57312 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T18:02:03.904+02:00  INFO 57312 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1669 ms
+2026-08-04T18:02:04.610+02:00  INFO 57312 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T18:02:04.620+02:00  INFO 57312 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.327 seconds (process running for 3.983)
+2026-08-04T18:02:09.847+02:00  INFO 57312 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-04T18:02:09.848+02:00  INFO 57312 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-04T18:02:09.851+02:00  INFO 57312 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-04T18:02:27.142+02:00  INFO 57312 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
+2026-08-04T18:02:49.063+02:00  INFO 57312 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : Cliente trovato: c Presti
