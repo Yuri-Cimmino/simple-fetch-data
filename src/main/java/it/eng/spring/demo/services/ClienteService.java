@@ -2,6 +2,8 @@ package it.eng.spring.demo.services;
 
 import java.util.ArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,7 @@ public class ClienteService {
 	private ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
 	private Long idCounter = 1L;
 	private final ClienteRepository repository;
+	private final static Logger log = LoggerFactory.getLogger(ClienteService.class);
 	
 	public ClienteService(ClienteRepository cr) {
 		this.repository = cr;
@@ -46,8 +49,10 @@ public class ClienteService {
 	
 	public Cliente creaCliente(ClienteDTOInput clienteDTOInput) {
 		Cliente cliente = Utils.ClientDTOInput2Client(clienteDTOInput);
-		cliente.setId(idCounter++);
-		listaClienti.add(cliente);
-		return cliente;
+//		cliente.setId(idCounter++);
+//		listaClienti.add(cliente);
+		Cliente cl = repository.save(cliente);
+		log.info(String.valueOf(cl.getId()));
+		return cl;
 	}
 }
