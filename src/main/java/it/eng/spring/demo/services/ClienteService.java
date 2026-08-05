@@ -1,11 +1,14 @@
 package it.eng.spring.demo.services;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import it.eng.spring.demo.dto.ClienteDTOInput;
 import it.eng.spring.demo.dto.ClienteDTOOutput;
@@ -27,32 +30,39 @@ public class ClienteService {
 
 
 	public ResponseEntity<Object> getClienti() {
+		List<Cliente> listaClientiDb = repository.findAll();
 		
-		if (listaClienti.isEmpty()) {
+		if (listaClientiDb.isEmpty()) {
 			Errore errore = new Errore("CLI-003", "Lista clienti vuota");
 			return ResponseEntity.status(404).body(errore);
 		}
 
-		return ResponseEntity.ok(new ArrayList<>(listaClienti));
+		return ResponseEntity.ok(listaClientiDb);
 	}
 
 	public ClienteDTOOutput getSpecificClient( Long id) {
-		ClienteDTOOutput trovato = null;
-
-		for(Cliente cliente : listaClienti) {
-			if(cliente.getId() == id) {
-				trovato = Utils.Client2ClientDTOOutput(cliente);
-			}
+		Optional<Cliente> cliente = repository.findById(id);
+		if(cliente.isPresent()) {
+			return Utils.Client2ClientDTOOutput(cliente.get());
 		}
-		return trovato;
+		return Utils.Client2ClientDTOOutput(cliente.get());
+
 	}
 	
 	public Cliente creaCliente(ClienteDTOInput clienteDTOInput) {
 		Cliente cliente = Utils.ClientDTOInput2Client(clienteDTOInput);
-//		cliente.setId(idCounter++);
-//		listaClienti.add(cliente);
 		Cliente cl = repository.save(cliente);
 		log.info(String.valueOf(cl.getId()));
 		return cl;
+	}
+	
+	
+	public boolean eliminaCliente(Long id){
+		if(repository.existsById(id)) {
+			repository.deleteById(id);
+			return true;
+		}else {
+			return false;
+		}
 	}
 }

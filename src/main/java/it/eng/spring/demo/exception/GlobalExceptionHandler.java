@@ -1,5 +1,7 @@
 package it.eng.spring.demo.exception;
 
+import java.util.NoSuchElementException;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -19,4 +21,10 @@ public class GlobalExceptionHandler {
 		return ResponseEntity.badRequest().body(err);
 	}
 
+	@ExceptionHandler
+	public ResponseEntity<Object> handleNoShuchElementException(NoSuchElementException nsee){
+		Errore err = new Errore("ERR-NO-ELEMENT-01","Error NoSuchElementException: " + nsee);
+		return ResponseEntity.badRequest().body(err);
+	}
+	
 }

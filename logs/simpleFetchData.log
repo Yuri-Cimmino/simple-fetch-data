@@ -2301,3 +2301,601 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 2026-08-05T15:31:38.059+02:00  INFO 10864 --- [simpleFetchData] [http-nio-8080-exec-8] i.e.spring.demo.services.ClienteService  : 1
 2026-08-05T15:32:53.355+02:00  INFO 10864 --- [simpleFetchData] [http-nio-8080-exec-6] i.e.spring.demo.services.ClienteService  : 2
 2026-08-05T15:33:10.460+02:00  INFO 10864 --- [simpleFetchData] [http-nio-8080-exec-5] i.e.spring.demo.services.ClienteService  : 3
+2026-08-05T15:42:18.356+02:00  INFO 17244 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 17244 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T15:42:18.362+02:00  INFO 17244 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T15:42:19.876+02:00  INFO 17244 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T15:42:19.929+02:00  INFO 17244 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2026-08-05T15:42:20.655+02:00  INFO 17244 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T15:42:20.673+02:00  INFO 17244 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T15:42:20.674+02:00  INFO 17244 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T15:42:20.750+02:00  INFO 17244 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2304 ms
+2026-08-05T15:42:21.106+02:00  INFO 17244 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T15:42:21.190+02:00  INFO 17244 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T15:42:21.859+02:00  INFO 17244 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T15:42:21.914+02:00  INFO 17244 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T15:42:22.195+02:00  INFO 17244 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T15:42:22.197+02:00  INFO 17244 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T15:42:22.280+02:00  INFO 17244 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T15:42:23.318+02:00  INFO 17244 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T15:42:23.385+02:00  INFO 17244 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T15:42:23.515+02:00  INFO 17244 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T15:42:23.806+02:00  WARN 17244 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T15:42:24.376+02:00  INFO 17244 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T15:42:24.515+02:00  INFO 17244 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T15:42:24.528+02:00  INFO 17244 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 6.871 seconds (process running for 7.53)
+2026-08-05T15:48:32.337+02:00  INFO 34168 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 34168 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T15:48:32.347+02:00  INFO 34168 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T15:48:33.669+02:00  INFO 34168 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T15:48:33.761+02:00  INFO 34168 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2026-08-05T15:48:34.548+02:00  INFO 34168 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T15:48:34.580+02:00  INFO 34168 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T15:48:34.580+02:00  INFO 34168 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T15:48:34.675+02:00  INFO 34168 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2248 ms
+2026-08-05T15:48:34.972+02:00  INFO 34168 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T15:48:35.074+02:00  INFO 34168 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T15:48:35.777+02:00  INFO 34168 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T15:48:35.817+02:00  INFO 34168 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T15:48:36.073+02:00  INFO 34168 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T15:48:36.077+02:00  INFO 34168 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T15:48:36.146+02:00  INFO 34168 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T15:48:37.199+02:00  INFO 34168 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T15:48:37.270+02:00  INFO 34168 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T15:48:37.387+02:00  INFO 34168 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T15:48:37.711+02:00  WARN 34168 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T15:48:38.341+02:00  INFO 34168 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T15:48:38.458+02:00  INFO 34168 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T15:48:38.469+02:00  INFO 34168 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 6.739 seconds (process running for 7.32)
+2026-08-05T15:49:09.217+02:00  INFO 34168 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T15:49:09.219+02:00  INFO 34168 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T15:49:09.224+02:00  INFO 34168 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-08-05T15:59:07.569+02:00  INFO 16776 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 16776 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T15:59:07.573+02:00  INFO 16776 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T15:59:08.888+02:00  INFO 16776 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T15:59:08.943+02:00  INFO 16776 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2026-08-05T15:59:09.647+02:00  INFO 16776 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T15:59:09.691+02:00  INFO 16776 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T15:59:09.692+02:00  INFO 16776 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T15:59:09.765+02:00  INFO 16776 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2121 ms
+2026-08-05T15:59:10.074+02:00  INFO 16776 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T15:59:10.200+02:00  INFO 16776 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T15:59:10.947+02:00  INFO 16776 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T15:59:10.997+02:00  INFO 16776 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T15:59:11.255+02:00  INFO 16776 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T15:59:11.258+02:00  INFO 16776 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T15:59:11.329+02:00  INFO 16776 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T15:59:12.402+02:00  INFO 16776 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T15:59:12.473+02:00  INFO 16776 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T15:59:12.593+02:00  INFO 16776 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T15:59:12.918+02:00  WARN 16776 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T15:59:13.524+02:00  INFO 16776 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T15:59:13.660+02:00  INFO 16776 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T15:59:13.684+02:00  INFO 16776 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 6.744 seconds (process running for 7.326)
+2026-08-05T15:59:34.655+02:00  INFO 16776 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T15:59:34.656+02:00  INFO 16776 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T15:59:34.659+02:00  INFO 16776 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T15:59:34.838+02:00  INFO 16776 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : sdvfsdvg4d6fgv4aef89
+2026-08-05T15:59:35.022+02:00  INFO 16776 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : Cliente trovato: Svitlana Oliveri
+2026-08-05T15:59:47.105+02:00  INFO 16776 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : sdvfsdvg4d6fgv4aef89
+2026-08-05T15:59:47.109+02:00 ERROR 16776 --- [simpleFetchData] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at it.eng.spring.demo.services.ClienteService.getSpecificClient(ClienteService.java:47) ~[classes/:na]
+	at it.eng.spring.demo.controller.ClienteController.getSpecificClient(ClienteController.java:79) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-08-05T16:02:46.439+02:00  INFO 23108 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 23108 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:02:46.454+02:00  INFO 23108 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:02:48.134+02:00  INFO 23108 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:02:48.227+02:00  INFO 23108 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2026-08-05T16:02:49.177+02:00  INFO 23108 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:02:49.212+02:00  INFO 23108 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:02:49.214+02:00  INFO 23108 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:02:49.318+02:00  INFO 23108 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2763 ms
+2026-08-05T16:02:49.754+02:00  INFO 23108 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:02:49.884+02:00  INFO 23108 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:02:50.811+02:00  INFO 23108 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:02:50.872+02:00  INFO 23108 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:02:51.156+02:00  INFO 23108 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T16:02:51.158+02:00  INFO 23108 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T16:02:51.230+02:00  INFO 23108 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T16:02:52.340+02:00  INFO 23108 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T16:02:52.415+02:00  INFO 23108 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T16:02:52.565+02:00  INFO 23108 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T16:02:52.969+02:00  WARN 23108 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T16:02:53.717+02:00  INFO 23108 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T16:02:53.853+02:00  INFO 23108 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T16:02:53.869+02:00  INFO 23108 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 8.248 seconds (process running for 8.95)
+2026-08-05T16:02:56.544+02:00  INFO 23108 --- [simpleFetchData] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T16:02:56.545+02:00  INFO 23108 --- [simpleFetchData] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T16:02:56.547+02:00  INFO 23108 --- [simpleFetchData] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T16:02:56.764+02:00  INFO 23108 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : sdvfsdvg4d6fgv4aef89
+2026-08-05T16:08:40.060+02:00  INFO 36052 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 36052 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:08:40.067+02:00  INFO 36052 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:08:41.774+02:00  INFO 36052 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:08:41.885+02:00  INFO 36052 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2026-08-05T16:08:42.699+02:00  INFO 36052 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:08:42.727+02:00  INFO 36052 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:08:42.728+02:00  INFO 36052 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:08:42.821+02:00  INFO 36052 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2678 ms
+2026-08-05T16:08:43.205+02:00  INFO 36052 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:08:43.324+02:00  INFO 36052 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:08:44.224+02:00  INFO 36052 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:08:44.284+02:00  INFO 36052 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:08:44.581+02:00  INFO 36052 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T16:08:44.585+02:00  INFO 36052 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T16:08:44.668+02:00  INFO 36052 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T16:08:45.735+02:00  INFO 36052 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T16:08:45.798+02:00  INFO 36052 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T16:08:45.964+02:00  INFO 36052 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T16:08:46.292+02:00  WARN 36052 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T16:08:47.032+02:00  INFO 36052 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T16:08:47.153+02:00  INFO 36052 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T16:08:47.165+02:00  INFO 36052 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 7.782 seconds (process running for 8.452)
+2026-08-05T16:09:02.307+02:00  INFO 36052 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T16:09:02.308+02:00  INFO 36052 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T16:09:02.311+02:00  INFO 36052 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-05T16:16:26.615+02:00  INFO 23952 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 23952 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:16:26.621+02:00  INFO 23952 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:16:28.037+02:00  INFO 23952 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:16:28.112+02:00  INFO 23952 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2026-08-05T16:16:28.837+02:00  INFO 23952 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:16:28.880+02:00  INFO 23952 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:16:28.880+02:00  INFO 23952 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:16:28.998+02:00  INFO 23952 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2298 ms
+2026-08-05T16:16:29.369+02:00  INFO 23952 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:16:29.479+02:00  INFO 23952 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:16:30.142+02:00  INFO 23952 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:16:30.177+02:00  INFO 23952 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:16:30.424+02:00  INFO 23952 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T16:16:30.427+02:00  INFO 23952 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T16:16:30.514+02:00  INFO 23952 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T16:16:31.603+02:00  INFO 23952 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T16:16:31.666+02:00  INFO 23952 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T16:16:31.785+02:00  INFO 23952 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T16:16:32.095+02:00  WARN 23952 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T16:16:32.718+02:00  INFO 23952 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T16:16:32.857+02:00  INFO 23952 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T16:16:32.868+02:00  INFO 23952 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 6.969 seconds (process running for 7.633)
+2026-08-05T16:16:52.759+02:00  INFO 23952 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T16:16:52.761+02:00  INFO 23952 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T16:16:52.763+02:00  INFO 23952 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T16:17:36.222+02:00  INFO 11692 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 11692 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:17:36.245+02:00  INFO 11692 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:17:38.735+02:00  INFO 13216 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 13216 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:17:38.743+02:00  INFO 13216 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:17:38.816+02:00  INFO 4496 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 4496 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:17:38.827+02:00  INFO 4496 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:17:41.881+02:00  INFO 13216 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:17:41.945+02:00  INFO 4496 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:17:42.032+02:00  INFO 13216 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interface.
+2026-08-05T16:17:42.207+02:00  INFO 4496 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 1 JPA repository interface.
+2026-08-05T16:17:43.504+02:00  INFO 13216 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:17:43.542+02:00  INFO 13216 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:17:43.542+02:00  INFO 13216 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:17:43.648+02:00  INFO 4496 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:17:43.705+02:00  INFO 4496 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:17:43.706+02:00  INFO 4496 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:17:43.743+02:00  INFO 13216 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4818 ms
+2026-08-05T16:17:43.951+02:00  INFO 4496 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4879 ms
+2026-08-05T16:17:44.336+02:00  INFO 13216 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:17:44.586+02:00  INFO 13216 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:17:44.657+02:00  INFO 4496 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:17:44.827+02:00  INFO 4496 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:17:45.879+02:00  INFO 13216 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:17:45.973+02:00  INFO 13216 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:17:46.358+02:00  INFO 4496 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:17:46.471+02:00  INFO 4496 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:17:46.837+02:00  INFO 13216 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T16:17:46.847+02:00  INFO 13216 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T16:17:47.122+02:00  INFO 13216 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T16:17:47.861+02:00  WARN 4496 --- [simpleFetchData] [main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 90020, SQLState: 90020
+2026-08-05T16:17:47.861+02:00  WARN 4496 --- [simpleFetchData] [main] org.hibernate.orm.jdbc.error             : Database may be already in use: "C:/Users/soliveri/workspace/BE/simple-fetch-data/db/clienti.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-240]
+2026-08-05T16:17:47.863+02:00  WARN 4496 --- [simpleFetchData] [main] org.hibernate.orm.jdbc                   : HHH100046: Could not obtain connection to query JDBC database metadata
+
+org.hibernate.exception.GenericJDBCException: Unable to obtain isolated JDBC connection [Database may be already in use: "C:/Users/soliveri/workspace/BE/simple-fetch-data/db/clienti.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-240]] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:39) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:101) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:51) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:366) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:143) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:120) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:80) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:260) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:235) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:212) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:251) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:203) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:180) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1388) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1468) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1450) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: "C:/Users/soliveri/workspace/BE/simple-fetch-data/db/clienti.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:212) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:165) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.mvstore.db.Store.<init>(Store.java:142) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.engine.Database.<init>(Database.java:328) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.engine.Engine.openSession(Engine.java:92) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.engine.Engine.openSession(Engine.java:222) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.engine.Engine.createSession(Engine.java:201) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:350) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.Driver.connect(Driver.java:59) ~[h2-2.4.240.jar:2.4.240]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:149) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:508) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	... 37 common frames omitted
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/soliveri/workspace/BE/simple-fetch-data/db/clienti.mv.db [2.4.240/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2164) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.mvstore.db.Store.<init>(Store.java:133) ~[h2-2.4.240.jar:2.4.240]
+	... 54 common frames omitted
+
+2026-08-05T16:17:47.875+02:00 ERROR 4496 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2026-08-05T16:17:47.876+02:00  WARN 4496 --- [simpleFetchData] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2026-08-05T16:17:47.885+02:00  INFO 4496 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-08-05T16:17:47.912+02:00  INFO 4496 --- [simpleFetchData] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-05T16:17:47.948+02:00 ERROR 4496 --- [simpleFetchData] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at it.eng.spring.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:273) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:235) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:212) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:251) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:203) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:180) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1388) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1468) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1450) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811) ~[spring-beans-7.0.8.jar:7.0.8]
+	... 15 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:190) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:86) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:200) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:452) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:143) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:120) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:80) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:260) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	... 31 common frames omitted
+
+2026-08-05T16:17:49.000+02:00  INFO 13216 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T16:17:49.099+02:00  INFO 13216 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T16:17:49.284+02:00  INFO 13216 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T16:17:49.770+02:00  WARN 13216 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T16:17:51.525+02:00  INFO 13216 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T16:17:51.748+02:00  INFO 13216 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T16:17:51.767+02:00  INFO 13216 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 14.502 seconds (process running for 17.357)
+2026-08-05T16:18:04.887+02:00  INFO 33012 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 33012 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:18:04.894+02:00  INFO 33012 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:18:06.498+02:00  INFO 33012 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:18:06.621+02:00  INFO 33012 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
+2026-08-05T16:18:07.765+02:00  INFO 33012 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:18:07.799+02:00  INFO 33012 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:18:07.800+02:00  INFO 33012 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:18:07.984+02:00  INFO 33012 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2968 ms
+2026-08-05T16:18:08.383+02:00  INFO 33012 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:18:08.551+02:00  INFO 33012 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:18:09.802+02:00  INFO 33012 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:18:09.883+02:00  INFO 33012 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:18:10.434+02:00  INFO 33012 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T16:18:10.439+02:00  INFO 33012 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T16:18:10.614+02:00  INFO 33012 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T16:18:12.373+02:00  INFO 33012 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T16:18:12.463+02:00  INFO 33012 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T16:18:12.620+02:00  INFO 33012 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T16:18:13.080+02:00  WARN 33012 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T16:18:14.251+02:00  INFO 33012 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T16:18:14.453+02:00  INFO 33012 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T16:18:14.477+02:00  INFO 33012 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 10.51 seconds (process running for 11.456)
+2026-08-05T16:18:18.915+02:00  INFO 33012 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T16:18:18.916+02:00  INFO 33012 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T16:18:18.918+02:00  INFO 33012 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T16:22:20.243+02:00  INFO 3320 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 3320 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:22:20.251+02:00  INFO 3320 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:22:21.766+02:00  INFO 3320 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:22:21.851+02:00  INFO 3320 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2026-08-05T16:22:22.700+02:00  INFO 3320 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:22:22.728+02:00  INFO 3320 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:22:22.730+02:00  INFO 3320 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:22:22.864+02:00  INFO 3320 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2528 ms
+2026-08-05T16:22:23.180+02:00  INFO 3320 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:22:23.271+02:00  INFO 3320 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:22:24.063+02:00  INFO 3320 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:22:24.125+02:00  INFO 3320 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:22:24.509+02:00  INFO 3320 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T16:22:24.512+02:00  INFO 3320 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T16:22:24.661+02:00  INFO 3320 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T16:22:25.972+02:00  INFO 3320 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T16:22:26.052+02:00  INFO 3320 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T16:22:26.190+02:00  INFO 3320 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T16:22:26.499+02:00  WARN 3320 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T16:22:27.122+02:00  INFO 3320 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T16:22:27.235+02:00  INFO 3320 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T16:22:27.254+02:00  INFO 3320 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 7.9 seconds (process running for 8.885)
+2026-08-05T16:22:31.278+02:00  INFO 3320 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T16:22:31.279+02:00  INFO 3320 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T16:22:31.283+02:00  INFO 3320 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-05T16:35:21.973+02:00  INFO 2508 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 2508 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:35:21.979+02:00  INFO 2508 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:35:23.370+02:00  INFO 2508 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:35:23.445+02:00  INFO 2508 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2026-08-05T16:35:24.185+02:00  INFO 2508 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:35:24.223+02:00  INFO 2508 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:35:24.223+02:00  INFO 2508 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:35:24.317+02:00  INFO 2508 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2254 ms
+2026-08-05T16:35:24.638+02:00  INFO 2508 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:35:24.735+02:00  INFO 2508 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:35:25.464+02:00  INFO 2508 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:35:25.526+02:00  INFO 2508 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:35:25.818+02:00  INFO 2508 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T16:35:25.820+02:00  INFO 2508 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T16:35:25.913+02:00  INFO 2508 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T16:35:26.928+02:00  INFO 2508 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T16:35:26.992+02:00  INFO 2508 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T16:35:27.118+02:00  INFO 2508 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T16:35:27.440+02:00  WARN 2508 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T16:35:28.058+02:00  INFO 2508 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T16:35:28.149+02:00  INFO 2508 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T16:35:28.159+02:00  INFO 2508 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 6.843 seconds (process running for 7.48)
+2026-08-05T16:35:35.074+02:00  INFO 2508 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T16:35:35.074+02:00  INFO 2508 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T16:35:35.078+02:00  INFO 2508 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-05T16:36:54.416+02:00  INFO 2508 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.spring.demo.services.ClienteService  : 33
+2026-08-05T16:37:28.272+02:00  INFO 2508 --- [simpleFetchData] [http-nio-8080-exec-5] i.e.spring.demo.services.ClienteService  : 34
+2026-08-05T16:39:36.944+02:00  INFO 2508 --- [simpleFetchData] [http-nio-8080-exec-6] i.e.spring.demo.services.ClienteService  : 35
+2026-08-05T16:40:02.714+02:00  INFO 23088 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 23088 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T16:40:02.720+02:00  INFO 23088 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T16:40:04.126+02:00  INFO 23088 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T16:40:04.191+02:00  INFO 23088 --- [simpleFetchData] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2026-08-05T16:40:04.918+02:00  INFO 23088 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T16:40:04.939+02:00  INFO 23088 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T16:40:04.939+02:00  INFO 23088 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T16:40:05.022+02:00  INFO 23088 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2228 ms
+2026-08-05T16:40:05.339+02:00  INFO 23088 --- [simpleFetchData] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T16:40:05.465+02:00  INFO 23088 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T16:40:06.274+02:00  INFO 23088 --- [simpleFetchData] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T16:40:06.319+02:00  INFO 23088 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T16:40:06.601+02:00  INFO 23088 --- [simpleFetchData] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/clienti user=SA
+2026-08-05T16:40:06.604+02:00  INFO 23088 --- [simpleFetchData] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T16:40:06.683+02:00  INFO 23088 --- [simpleFetchData] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./db/clienti]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLIENTI/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T16:40:07.724+02:00  INFO 23088 --- [simpleFetchData] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T16:40:07.789+02:00  INFO 23088 --- [simpleFetchData] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T16:40:07.956+02:00  INFO 23088 --- [simpleFetchData] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T16:40:08.353+02:00  WARN 23088 --- [simpleFetchData] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T16:40:08.974+02:00  INFO 23088 --- [simpleFetchData] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/clienti'
+2026-08-05T16:40:09.089+02:00  INFO 23088 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T16:40:09.100+02:00  INFO 23088 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 6.979 seconds (process running for 7.536)
+2026-08-05T16:40:14.524+02:00  INFO 23088 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T16:40:14.525+02:00  INFO 23088 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T16:40:14.527+02:00  INFO 23088 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T16:40:15.054+02:00  INFO 23088 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.spring.demo.services.ClienteService  : 65

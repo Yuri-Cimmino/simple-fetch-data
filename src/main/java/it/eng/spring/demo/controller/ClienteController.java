@@ -127,15 +127,12 @@ public class ClienteController {
 	
 	@DeleteMapping("/cliente/{id}")
 	public ResponseEntity<Object> eliminaCliente(@PathVariable Long id){
-		for(Cliente tempCliente : listaClienti) {
-			if(tempCliente.getId() == id ) {
-				listaClienti.remove(tempCliente);
-				return ResponseEntity.ok(new Errore("CLI-0010","Cancellazione cliente effettuato"));
-			}
+		boolean eliminato = cService.eliminaCliente(id);
+		if(!eliminato) {
+			Errore nonEliminatoErr = new Errore("FAIL-DELETE-001", "Cliente non eliminato!");
+			return ResponseEntity.status(400).body(nonEliminatoErr);
 		}
-		Errore errore = new Errore("CLI-009","Cliente non trovato!");
-		return ResponseEntity.status(404).body(errore);	
-		
+		return ResponseEntity.noContent().build();
 	}
 	
 }
