@@ -894,3 +894,137 @@ java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" be
 2026-08-04T18:02:09.851+02:00  INFO 57312 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2026-08-04T18:02:27.142+02:00  INFO 57312 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : Cliente trovato: ciao Presti
 2026-08-04T18:02:49.063+02:00  INFO 57312 --- [simpleFetchData] [http-nio-8080-exec-3] i.e.s.demo.controller.ClienteController  : Cliente trovato: c Presti
+2026-08-05T09:46:18.430+02:00  INFO 21464 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 21464 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T09:46:18.441+02:00  INFO 21464 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T09:46:20.084+02:00  INFO 21464 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8085 (http)
+2026-08-05T09:46:20.134+02:00  INFO 21464 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T09:46:20.135+02:00  INFO 21464 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T09:46:20.199+02:00  INFO 21464 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1682 ms
+2026-08-05T09:46:20.739+02:00  INFO 21464 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8085 (http) with context path '/'
+2026-08-05T09:46:20.747+02:00  INFO 21464 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.05 seconds (process running for 3.669)
+2026-08-05T09:46:38.584+02:00  INFO 21464 --- [simpleFetchData] [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T09:46:38.585+02:00  INFO 21464 --- [simpleFetchData] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T09:46:38.588+02:00  INFO 21464 --- [simpleFetchData] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T09:47:51.372+02:00  INFO 15692 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 15692 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T09:47:51.378+02:00  INFO 15692 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T09:47:52.712+02:00  INFO 15692 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8085 (http)
+2026-08-05T09:47:52.739+02:00  INFO 15692 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T09:47:52.739+02:00  INFO 15692 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T09:47:52.800+02:00  INFO 15692 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1344 ms
+2026-08-05T09:47:53.292+02:00  INFO 15692 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8085 (http) with context path '/'
+2026-08-05T09:47:53.299+02:00  INFO 15692 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 2.632 seconds (process running for 3.132)
+2026-08-05T09:47:58.639+02:00  INFO 15692 --- [simpleFetchData] [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T09:47:58.640+02:00  INFO 15692 --- [simpleFetchData] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T09:47:58.642+02:00  INFO 15692 --- [simpleFetchData] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T09:48:46.002+02:00  INFO 1848 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 1848 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T09:48:46.009+02:00  INFO 1848 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T09:48:47.309+02:00  INFO 1848 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T09:48:47.332+02:00  INFO 1848 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T09:48:47.334+02:00  INFO 1848 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T09:48:47.392+02:00  INFO 1848 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1310 ms
+2026-08-05T09:48:47.951+02:00  INFO 1848 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T09:48:47.960+02:00  INFO 1848 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 2.603 seconds (process running for 3.124)
+2026-08-05T09:49:08.846+02:00  INFO 1848 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T09:49:08.847+02:00  INFO 1848 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T09:49:08.848+02:00  INFO 1848 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-05T09:55:13.541+02:00 ERROR 1848 --- [simpleFetchData] [http-nio-8080-exec-6] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-05T09:55:56.232+02:00 ERROR 1848 --- [simpleFetchData] [http-nio-8080-exec-7] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-05T09:58:39.743+02:00 ERROR 1848 --- [simpleFetchData] [http-nio-8080-exec-10] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-05T10:01:16.294+02:00  INFO 19936 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 19936 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T10:01:16.300+02:00  INFO 19936 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:01:17.610+02:00  INFO 19936 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:01:17.626+02:00  INFO 19936 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:01:17.626+02:00  INFO 19936 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:01:17.682+02:00  INFO 19936 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1307 ms
+2026-08-05T10:01:18.228+02:00  INFO 19936 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:01:18.234+02:00  INFO 19936 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 2.642 seconds (process running for 3.158)
+2026-08-05T10:01:20.941+02:00  INFO 19936 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:01:20.941+02:00  INFO 19936 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:01:20.943+02:00  INFO 19936 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:01:20.993+02:00  INFO 19936 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : svfa5sv416adf
+2026-08-05T10:01:20.993+02:00 ERROR 19936 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-05T10:01:55.468+02:00  WARN 19936 --- [simpleFetchData] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'token' for method parameter type String is not present]
+2026-08-05T10:03:30.805+02:00  INFO 22584 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 22584 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T10:03:30.818+02:00  INFO 22584 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:03:32.126+02:00  INFO 22584 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:03:32.150+02:00  INFO 22584 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:03:32.152+02:00  INFO 22584 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:03:32.212+02:00  INFO 22584 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1325 ms
+2026-08-05T10:03:32.716+02:00  INFO 22584 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:03:32.723+02:00  INFO 22584 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 2.558 seconds (process running for 3.044)
+2026-08-05T10:03:35.808+02:00  INFO 22584 --- [simpleFetchData] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:03:35.809+02:00  INFO 22584 --- [simpleFetchData] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:03:35.810+02:00  INFO 22584 --- [simpleFetchData] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-05T10:03:35.896+02:00  INFO 22584 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : null
+2026-08-05T10:03:35.896+02:00 ERROR 22584 --- [simpleFetchData] [http-nio-8080-exec-2] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-05T10:06:04.875+02:00  INFO 28016 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 28016 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T10:06:04.880+02:00  INFO 28016 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:06:06.209+02:00  INFO 28016 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:06:06.230+02:00  INFO 28016 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:06:06.230+02:00  INFO 28016 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:06:06.285+02:00  INFO 28016 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1339 ms
+2026-08-05T10:06:06.821+02:00  INFO 28016 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:06:06.829+02:00  INFO 28016 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 2.613 seconds (process running for 3.123)
+2026-08-05T10:06:40.806+02:00  INFO 28016 --- [simpleFetchData] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:06:40.806+02:00  INFO 28016 --- [simpleFetchData] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:06:40.808+02:00  INFO 28016 --- [simpleFetchData] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:06:40.862+02:00  INFO 28016 --- [simpleFetchData] [http-nio-8080-exec-4] i.e.s.demo.controller.ClienteController  : sdvfsdvg4d6fgv4aef89
+2026-08-05T10:06:40.862+02:00 ERROR 28016 --- [simpleFetchData] [http-nio-8080-exec-4] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-05T10:07:44.311+02:00  INFO 23708 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 23708 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T10:07:44.317+02:00  INFO 23708 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:07:45.623+02:00  INFO 23708 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:07:45.642+02:00  INFO 23708 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:07:45.642+02:00  INFO 23708 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:07:45.703+02:00  INFO 23708 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1309 ms
+2026-08-05T10:07:46.205+02:00  INFO 23708 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:07:46.209+02:00  INFO 23708 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 2.562 seconds (process running for 3.06)
+2026-08-05T10:07:53.725+02:00  INFO 23708 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:07:53.726+02:00  INFO 23708 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:07:53.732+02:00  INFO 23708 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:07:53.777+02:00  INFO 23708 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : sdvfsdvg4d6fgv4aef89
+2026-08-05T10:07:53.777+02:00  INFO 23708 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : null
+2026-08-05T10:07:53.779+02:00  INFO 23708 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : it-IT
+2026-08-05T10:07:53.779+02:00 ERROR 23708 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-05T10:11:06.814+02:00  INFO 10912 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 10912 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T10:11:06.820+02:00  INFO 10912 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:11:08.241+02:00  INFO 10912 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:11:08.268+02:00  INFO 10912 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:11:08.268+02:00  INFO 10912 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:11:08.361+02:00  INFO 10912 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1450 ms
+2026-08-05T10:11:09.038+02:00  INFO 10912 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:11:09.046+02:00  INFO 10912 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.137 seconds (process running for 4.159)
+2026-08-05T10:11:14.229+02:00  INFO 10912 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:11:14.230+02:00  INFO 10912 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:11:14.232+02:00  INFO 10912 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:14:12.198+02:00  INFO 16216 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 16216 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T10:14:12.202+02:00  INFO 16216 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:14:13.527+02:00  INFO 16216 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:14:13.548+02:00  INFO 16216 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:14:13.548+02:00  INFO 16216 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:14:13.626+02:00  INFO 16216 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1347 ms
+2026-08-05T10:14:14.143+02:00  INFO 16216 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:14:14.149+02:00  INFO 16216 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 2.602 seconds (process running for 3.114)
+2026-08-05T10:14:24.962+02:00  INFO 3992 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 3992 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T10:14:24.967+02:00  INFO 3992 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:14:26.465+02:00  INFO 3992 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:14:26.507+02:00  INFO 3992 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:14:26.507+02:00  INFO 3992 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:14:26.583+02:00  INFO 3992 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1518 ms
+2026-08-05T10:14:27.309+02:00  INFO 3992 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:14:27.321+02:00  INFO 3992 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.278 seconds (process running for 4.117)
+2026-08-05T10:14:34.050+02:00  INFO 3992 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:14:34.051+02:00  INFO 3992 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:14:34.053+02:00  INFO 3992 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:18:20.509+02:00  INFO 14492 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 14492 (C:\Users\soliveri\workspace\BE\simple-fetch-data\target\classes started by soliveri in C:\Users\soliveri\workspace\BE\simple-fetch-data)
+2026-08-05T10:18:20.515+02:00  INFO 14492 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:18:21.901+02:00  INFO 14492 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:18:21.922+02:00  INFO 14492 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:18:21.922+02:00  INFO 14492 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:18:21.990+02:00  INFO 14492 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1394 ms
+2026-08-05T10:18:22.580+02:00  INFO 14492 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:18:22.585+02:00  INFO 14492 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 2.855 seconds (process running for 3.521)
+2026-08-05T10:18:29.808+02:00  INFO 14492 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:18:29.809+02:00  INFO 14492 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:18:29.810+02:00  INFO 14492 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-05T10:18:29.866+02:00  INFO 14492 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : sdvfsdvg4d6fgv4aef89
+2026-08-05T10:18:29.867+02:00 ERROR 14492 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : Errore
