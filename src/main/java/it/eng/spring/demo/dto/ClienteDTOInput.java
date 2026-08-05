@@ -1,5 +1,6 @@
 package it.eng.spring.demo.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -9,6 +10,7 @@ import jakarta.validation.constraints.Size;
 public class ClienteDTOInput {
 	@NotNull(message = "Nome obbligatorio")
 	@NotBlank(message = "Il campo nome non può essere vuoto")
+	@Schema(description = "Nome del cliente", example = "Mario")
 	private String nome;
 	@NotNull(message = "Cognome obbligatorio")
 	private String cognome;

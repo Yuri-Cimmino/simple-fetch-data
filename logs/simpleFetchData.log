@@ -1028,3 +1028,92 @@ java.lang.NullPointerException: Cannot invoke "org.slf4j.event.Level.toInt()" be
 2026-08-05T10:18:29.810+02:00  INFO 14492 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2026-08-05T10:18:29.866+02:00  INFO 14492 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : sdvfsdvg4d6fgv4aef89
 2026-08-05T10:18:29.867+02:00 ERROR 14492 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : Errore
+2026-08-05T10:22:47.022+02:00  INFO 31356 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 31356 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-05T10:22:47.035+02:00  INFO 31356 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:22:50.177+02:00  INFO 31356 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T10:22:50.202+02:00  INFO 31356 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:22:50.202+02:00  INFO 31356 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:22:50.344+02:00  INFO 31356 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3146 ms
+2026-08-05T10:22:51.610+02:00  INFO 31356 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T10:22:51.623+02:00  INFO 31356 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 5.761 seconds (process running for 6.932)
+2026-08-05T10:23:25.040+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:23:25.042+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:23:25.045+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:23:27.187+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1096 ms
+2026-08-05T10:28:08.515+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-10] i.e.s.demo.controller.ClienteController  : ciao
+2026-08-05T10:28:08.515+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-10] i.e.s.demo.controller.ClienteController  : Cliente trovato: string string
+2026-08-05T10:29:05.993+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-4] i.e.s.demo.controller.ClienteController  : NOME: simpleFetchData
+2026-08-05T11:01:21.281+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : ciao
+2026-08-05T11:01:21.305+02:00  INFO 31356 --- [simpleFetchData] [http-nio-8080-exec-1] i.e.s.demo.controller.ClienteController  : Cliente trovato: string string
+2026-08-05T11:04:24.148+02:00  INFO 63836 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 63836 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-05T11:04:24.168+02:00  INFO 63836 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T11:04:28.063+02:00  INFO 63836 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T11:04:28.129+02:00  INFO 63836 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T11:04:28.130+02:00  INFO 63836 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T11:04:28.453+02:00  INFO 63836 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4172 ms
+2026-08-05T11:04:30.669+02:00  INFO 63836 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T11:04:30.689+02:00  INFO 63836 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 7.412 seconds (process running for 8.196)
+2026-08-05T11:04:34.997+02:00  INFO 63836 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T11:04:34.998+02:00  INFO 63836 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T11:04:35.007+02:00  INFO 63836 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-08-05T11:04:37.240+02:00  INFO 63836 --- [simpleFetchData] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1466 ms
+2026-08-05T11:06:24.979+02:00  INFO 30052 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 30052 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-05T11:06:24.992+02:00  INFO 30052 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T11:06:28.905+02:00  INFO 30052 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T11:06:28.971+02:00  INFO 30052 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T11:06:28.974+02:00  INFO 30052 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T11:06:29.291+02:00  INFO 30052 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4177 ms
+2026-08-05T11:06:31.561+02:00  INFO 30052 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T11:06:31.587+02:00  INFO 30052 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 7.537 seconds (process running for 8.308)
+2026-08-05T11:06:32.437+02:00  INFO 30052 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T11:06:32.438+02:00  INFO 30052 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T11:06:32.440+02:00  INFO 30052 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T11:06:34.507+02:00  INFO 30052 --- [simpleFetchData] [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1264 ms
+2026-08-05T11:08:50.838+02:00  INFO 44136 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 44136 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-05T11:08:50.850+02:00  INFO 44136 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T11:08:52.861+02:00  INFO 44136 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T11:08:52.884+02:00  INFO 44136 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T11:08:52.884+02:00  INFO 44136 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T11:08:52.971+02:00  INFO 44136 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2005 ms
+2026-08-05T11:08:53.961+02:00  INFO 44136 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T11:08:53.972+02:00  INFO 44136 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 3.977 seconds (process running for 4.732)
+2026-08-05T11:08:58.765+02:00  INFO 44136 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T11:08:58.766+02:00  INFO 44136 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T11:08:58.769+02:00  INFO 44136 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T11:09:00.942+02:00  INFO 44136 --- [simpleFetchData] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1310 ms
+2026-08-05T11:11:49.372+02:00  INFO 4160 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 4160 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-05T11:11:49.387+02:00  INFO 4160 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T11:11:51.885+02:00  INFO 4160 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T11:11:51.953+02:00  INFO 4160 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T11:11:51.954+02:00  INFO 4160 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T11:11:52.277+02:00  INFO 4160 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2728 ms
+2026-08-05T11:11:54.408+02:00  INFO 4160 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T11:11:54.440+02:00  INFO 4160 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 5.968 seconds (process running for 6.697)
+2026-08-05T11:11:54.706+02:00  INFO 4160 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T11:11:54.709+02:00  INFO 4160 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T11:11:54.716+02:00  INFO 4160 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-08-05T11:11:56.681+02:00  INFO 4160 --- [simpleFetchData] [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1260 ms
+2026-08-05T11:14:23.639+02:00  INFO 18336 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 18336 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-05T11:14:23.649+02:00  INFO 18336 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T11:14:27.418+02:00  INFO 18336 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T11:14:27.462+02:00  INFO 18336 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T11:14:27.463+02:00  INFO 18336 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T11:14:27.692+02:00  INFO 18336 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3906 ms
+2026-08-05T11:14:29.998+02:00  INFO 18336 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T11:14:30.014+02:00  INFO 18336 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 7.361 seconds (process running for 8.123)
+2026-08-05T11:14:38.590+02:00  INFO 18336 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T11:14:38.592+02:00  INFO 18336 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T11:14:38.595+02:00  INFO 18336 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T11:14:40.904+02:00  INFO 18336 --- [simpleFetchData] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1463 ms
+2026-08-05T11:19:09.041+02:00  INFO 3596 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Starting DemoApplication using Java 21.0.11 with PID 3596 (C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data\target\classes started by y.cimmino in C:\Users\y.cimmino\Desktop\BackEnd\simple-fetch-data)
+2026-08-05T11:19:09.051+02:00  INFO 3596 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T11:19:12.604+02:00  INFO 3596 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-05T11:19:12.656+02:00  INFO 3596 --- [simpleFetchData] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T11:19:12.657+02:00  INFO 3596 --- [simpleFetchData] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T11:19:12.883+02:00  INFO 3596 --- [simpleFetchData] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3676 ms
+2026-08-05T11:19:15.292+02:00  INFO 3596 --- [simpleFetchData] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-05T11:19:15.330+02:00  INFO 3596 --- [simpleFetchData] [main] it.eng.spring.demo.DemoApplication       : Started DemoApplication in 7.321 seconds (process running for 8.119)
+2026-08-05T11:19:15.536+02:00  INFO 3596 --- [simpleFetchData] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T11:19:15.537+02:00  INFO 3596 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T11:19:15.540+02:00  INFO 3596 --- [simpleFetchData] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T11:19:17.495+02:00  INFO 3596 --- [simpleFetchData] [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1202 ms

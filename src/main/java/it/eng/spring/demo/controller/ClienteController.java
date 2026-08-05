@@ -17,6 +17,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import it.eng.spring.demo.dto.ClienteDTOInput;
 import it.eng.spring.demo.dto.ClienteDTOOutput;
 import it.eng.spring.demo.exception.BusinessException;
@@ -26,6 +30,7 @@ import it.eng.spring.demo.services.ClienteService;
 import jakarta.validation.Valid;
 
 @RestController
+@Tag(name = "Gestione Clienti", description = "Operazioni per la gestione dei clienti")
 public class ClienteController {
 	
 	private ArrayList<Cliente> listaClienti = new ArrayList<Cliente>();
@@ -67,7 +72,8 @@ public class ClienteController {
 	
 
 	@GetMapping("/cliente/{id}")
-	public ResponseEntity<Object> getSpecificClient(@PathVariable Long id, @RequestHeader Map<String, String> headers, @RequestHeader(value = "token", required = true) String token) {
+	@Operation(summary = "Cercare un cliente specifico")
+	public ResponseEntity<Object> getSpecificClient(@PathVariable @Parameter(description="Identificativo del cliente", example = "1") Long id, @RequestHeader Map<String, String> headers, @RequestHeader(value = "token", required = true) String token) {
 		String language = headers.get("language");
 		log.info(token);
 		ClienteDTOOutput trovato = cService.getSpecificClient(id);
@@ -83,6 +89,8 @@ public class ClienteController {
 	}
 	
 	@PostMapping("/cliente")
+	@Operation(summary = "Creazione del cliente nel db")
+	@ApiResponse(responseCode = "404", description = "Errore di validazione")
 	public ResponseEntity<Object> creaCliente(@RequestBody @Valid ClienteDTOInput cliente) throws BusinessException {
 		Cliente nuovoCliente = cService.creaCliente(cliente);
 		return ResponseEntity.status(201).body(nuovoCliente);
